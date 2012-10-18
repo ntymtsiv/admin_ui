@@ -12,12 +12,21 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
+
+
+
+
 public class MySteps extends SeleniumSteps{
 WebDriver driver = new FirefoxDriver();
 
+
+
 @Given("$site")
 public void goToGoogle(String site) {
+
     driver.get(site);
+    driver.manage().window().maximize();
+
     System.out.println("Page title is: " + driver.getTitle());
 }
 @When("find $word")
