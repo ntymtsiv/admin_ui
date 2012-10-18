@@ -12,14 +12,21 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
+
+
+
+
 public class MySteps extends SeleniumSteps{
 WebDriver driver = new FirefoxDriver();
 
+
+
 @Given("$site")
 public void goToGoogle(String site) {
+    driver.manage().window().maximize();
     driver.get(site);
-    System.out.println("Page title is: " + driver.getTitle());
-}
+System.out.println("Page title is: " + driver.getTitle());   }
+
 @When("find $word")
 
 public void Find_word(final String word) throws InterruptedException {
@@ -129,10 +136,10 @@ public void set_checkbox(String field, String value) throws  InterruptedExceptio
    element.click();
     Thread.sleep(2000L);
 }
-@Then("Check title")  // Find the text input element by its name
-public void check_title(){
-    // Should see: "cheese! - Google Search"
-    System.out.println("Page title is: " + driver.getTitle());
+@Then("Close after $second seconds")
+public void close(int seconds) throws  InterruptedException{
+    seconds=seconds*1000;
+    Thread.sleep(seconds);
 
     //Close the browser
     driver.quit();
