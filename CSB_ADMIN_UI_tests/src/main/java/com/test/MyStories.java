@@ -35,7 +35,7 @@ import static org.jbehave.core.reporters.Format.XML;
  * </p> 
  */
 public class MyStories extends JUnitStories {
-    private ContextView contextView = new LocalFrameContextView().sized(500, 100);
+    private ContextView contextView = new LocalFrameContextView().sized(500, 50);
     private SeleniumContext context = new SeleniumContext();
     @Override
     public Configuration configuration() {
@@ -61,7 +61,8 @@ public class MyStories extends JUnitStories {
     @Override
     protected List<String> storyPaths() {
         String stories = "**/" + System.getProperty("stories.to.run", "*.story");
-        return new StoryFinder().findPaths(codeLocationFromClass(this.getClass()), stories, "**/excluded*.story");
+        return new StoryFinder()
+                .findPaths(codeLocationFromClass(this.getClass()), stories, "**/excluded*.story");
 
     // This Embedder is used by Maven or Ant and it will override anything set in the constructor
 
