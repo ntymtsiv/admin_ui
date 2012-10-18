@@ -35,12 +35,15 @@ import static org.jbehave.core.reporters.Format.XML;
  * </p> 
  */
 public class MyStories extends JUnitStories {
-
+    private ContextView contextView = new LocalFrameContextView().sized(500, 100);
+    private SeleniumContext context = new SeleniumContext();
     @Override
     public Configuration configuration() {
         Class<? extends Embeddable> embeddableClass = this.getClass();
         return new SeleniumConfiguration()
+                .useSeleniumContext(context)
                 .useStoryLoader(new LoadFromClasspath(embeddableClass))
+                .useStepMonitor(new SeleniumStepMonitor(contextView, context, new SilentStepMonitor()))
                 .useStoryReporterBuilder(new StoryReporterBuilder()
                         .withCodeLocation(codeLocationFromClass(embeddableClass))
                         .withDefaultFormats()
