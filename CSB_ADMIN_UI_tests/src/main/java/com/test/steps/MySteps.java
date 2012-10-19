@@ -19,7 +19,7 @@ import com.test.help.tools.xpathFinder;
 
 public class MySteps {
 
-    WebDriver driver = new FirefoxDriver();
+    WebDriver driver = new HtmlUnitDriver();
 
 @Given("$site")
 public void goToGoogle(String site) {
