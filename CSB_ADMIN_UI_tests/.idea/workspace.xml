@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c26f06b1-dc19-43b4-8133-f069468672f9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/test/steps/MySteps.class" afterPath="$PROJECT_DIR$/target/classes/com/test/steps/MySteps.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-sample-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/jbehave-sample-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/help/tools/xpathFinder.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/help/tools/xpathFinder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.stats" afterPath="$PROJECT_DIR$/target/jbehave/AfterStories.stats" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.stats" afterPath="$PROJECT_DIR$/target/jbehave/BeforeStories.stats" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/index.html" afterPath="$PROJECT_DIR$/target/jbehave/view/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/reports.html" afterPath="$PROJECT_DIR$/target/jbehave/view/reports.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="jbehave-sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,7 +114,7 @@
       <file leaf-file-name="xpathFinder.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/help/tools/xpathFinder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="70" selection-start="298" selection-end="298" vertical-scroll-proportion="0.24680074">
+            <state line="9" column="73" selection-start="300" selection-end="300" vertical-scroll-proportion="0.24680074">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -573,7 +581,11 @@
       <created>1350638051708</created>
       <updated>1350638051708</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="'-'">
+      <created>1350638181362</created>
+      <updated>1350638181362</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -581,7 +593,7 @@
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -760,7 +772,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/help/tools/xpathFinder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="70" selection-start="298" selection-end="298" vertical-scroll-proportion="0.24680074">
+        <state line="9" column="73" selection-start="300" selection-end="300" vertical-scroll-proportion="0.24680074">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
