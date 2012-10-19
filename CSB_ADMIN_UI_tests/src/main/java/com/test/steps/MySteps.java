@@ -25,7 +25,8 @@ public class MySteps {
 public void goToGoogle(String site) {
     driver.manage().window().maximize();
     driver.get(site);
-System.out.println("Page title is: " + driver.getTitle());
+    xpathFinder path= new xpathFinder();
+    path.findXpathByName(driver);
 
 
 }
