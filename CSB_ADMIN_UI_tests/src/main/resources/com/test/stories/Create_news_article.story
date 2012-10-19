@@ -18,5 +18,5 @@ When I set field Article: 'You are awesome'
 When I press Save & Publish
 
 Scenario: Delete Article 2
-When I Delete
-When I Edit Draft
+When I  sel Delete
+When I sel Edit Draft

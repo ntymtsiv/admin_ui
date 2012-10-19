@@ -81,7 +81,7 @@ public void pressButton(final String button) throws  InterruptedException {
     driver.findElement(By.className(Button_class)).findElement(By.className(button_id)).click();
     Thread.sleep(3000L);
 }
-    @When("I $button")
+    @When("I sel $button")
     public void DeleteArticle(String button){
         String path="";
         if(button.equals("Delete"))
