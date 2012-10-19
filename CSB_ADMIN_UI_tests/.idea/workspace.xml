@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c26f06b1-dc19-43b4-8133-f069468672f9" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/Story.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedStory.story" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-sample-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/jbehave-sample-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/help/tools/xpathFinder.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/help/tools/xpathFinder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.stats" afterPath="$PROJECT_DIR$/target/jbehave/AfterStories.stats" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.stats" afterPath="$PROJECT_DIR$/target/jbehave/BeforeStories.stats" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/index.html" afterPath="$PROJECT_DIR$/target/jbehave/view/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/reports.html" afterPath="$PROJECT_DIR$/target/jbehave/view/reports.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="jbehave-sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -62,8 +70,8 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="excludedCreate_news_article.story" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story">
+      <file leaf-file-name="Create_news_article.story" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story">
           <provider selected="true" editor-type-id="text-editor">
             <state line="21" column="3" selection-start="806" selection-end="806" vertical-scroll-proportion="0.57586837">
               <folding />
@@ -84,8 +92,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Story.story" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/Story.story">
+      <file leaf-file-name="excludedStory.story" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedStory.story">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
               <folding />
@@ -552,7 +560,11 @@
       <created>1350639594079</created>
       <updated>1350639594079</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="'-'">
+      <created>1350640143569</created>
+      <updated>1350640143569</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -700,7 +712,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/Story.story">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedStory.story">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="14" selection-start="14" selection-end="14" vertical-scroll-proportion="0.0">
           <folding />
@@ -739,7 +751,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="3" selection-start="806" selection-end="806" vertical-scroll-proportion="0.57586837">
           <folding />
