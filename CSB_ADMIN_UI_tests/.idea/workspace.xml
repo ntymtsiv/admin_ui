@@ -4,7 +4,6 @@
     <list default="true" id="c26f06b1-dc19-43b4-8133-f069468672f9" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story" />
     </list>
     <ignored path="jbehave-sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,7 +73,7 @@
       <file leaf-file-name="MySteps.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="60" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.34188035">
+            <state line="67" column="61" selection-start="2034" selection-end="2034" vertical-scroll-proportion="0.66239315">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1463#1619#0" expanded="true" />
@@ -570,7 +569,11 @@
       <created>1350642852298</created>
       <updated>1350642852298</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="'-'">
+      <created>1350642908549</created>
+      <updated>1350642908549</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -757,7 +760,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="60" selection-start="2033" selection-end="2033" vertical-scroll-proportion="0.34188035">
+        <state line="67" column="61" selection-start="2034" selection-end="2034" vertical-scroll-proportion="0.66239315">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1463#1619#0" expanded="true" />
