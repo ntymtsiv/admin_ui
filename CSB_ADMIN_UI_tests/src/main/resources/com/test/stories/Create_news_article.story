@@ -18,5 +18,4 @@ When I set field Article: 'You are awesome'
 When I press Save & Publish
 
 Scenario: Delete Article 2
-When I press Delete with headline 'Hello all'
-
+When I press Delete
