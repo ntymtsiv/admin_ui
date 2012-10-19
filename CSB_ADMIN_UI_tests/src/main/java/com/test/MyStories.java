@@ -33,7 +33,7 @@ import static org.jbehave.core.reporters.Format.*;
  * </p> 
  */
 public class MyStories extends JUnitStories {
-    private ContextView contextView = new LocalFrameContextView().sized(500, 50);
+    private ContextView contextView = new LocalFrameContextView().sized(500, 50).located(0,600);
     private SeleniumContext context = new SeleniumContextFixed();
 
     @Override

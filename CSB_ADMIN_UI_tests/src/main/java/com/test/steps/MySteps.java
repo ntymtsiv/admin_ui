@@ -12,6 +12,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.test.help.tools.xpathFinder;
+import org.openqa.selenium.JavascriptExecutor;
 
 
 
@@ -25,8 +26,12 @@ public class MySteps {
 public void goToGoogle(String site) {
   //  driver.manage().window().maximize();
     driver.get(site);
+<<<<<<< HEAD
 //    xpathFinder path= new xpathFinder();
 //    path.findXpathByName(driver);
+=======
+
+>>>>>>> master
 
 
 }
@@ -66,6 +71,11 @@ public void select_tab(String tab){
     driver.findElement(By.id("main-nav")).findElement(By.xpath("li["+tab_nav+"]/a")).click();
 
 }
+@When("I scroll $par")
+public void scroll(String par) throws InterruptedException{
+    ((JavascriptExecutor)driver).executeScript("scrollTo(0,"+par+")");
+    Thread.sleep(5000L);
+}
 @When("I press $button")
 public void pressButton(final String button) throws  InterruptedException {
     String button_id="",Button_class="";
@@ -81,13 +91,16 @@ public void pressButton(final String button) throws  InterruptedException {
     else if (button.equals("Save & Publish"))  {
         Button_class="form-actions";
         button_id="pull-right"; }
-    else if (button.equals("Delete"))  {
-        Button_class="pull-right";
-        button_id="btn-danger"; }
-
     driver.findElement(By.className(Button_class)).findElement(By.className(button_id)).click();
     Thread.sleep(3000L);
 }
+    @When("I sel $button")
+    public void DeleteArticle(String button){
+
+      driver.findElement(By.partialLinkText(button)).click();
+    }
+
+
 @When("I pres Birthday")
 public void birthday(){
      driver.findElement(By.id("dt")).sendKeys("1991/12/12");
@@ -129,6 +142,12 @@ public void set_fields(String field, String value) throws  InterruptedException 
     WebElement element =driver.findElement(By.id(field_id));
     element.sendKeys(value);
     Thread.sleep(1000L); }
+
+@When("Pause $sec")
+public void pause(int sec)throws  InterruptedException{
+    sec=sec*1000;
+    Thread.sleep(sec);
+}
 
 @When("I set $field $value")
 public void set_checkbox(String field, String value) throws  InterruptedException {

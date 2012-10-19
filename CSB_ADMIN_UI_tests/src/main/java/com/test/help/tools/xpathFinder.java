@@ -9,6 +9,11 @@ import org.openqa.selenium.WebDriverBackedSelenium;
 
 public class xpathFinder {
 public void findXpathByName(WebDriver driver){
+<<<<<<< HEAD
+=======
+    driver.findElements(By.className("pull-right"));
+
+>>>>>>> master
 
 }
 }
