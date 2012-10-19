@@ -11,16 +11,15 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import com.test.help.tools.xpathFinder;
 
 
 
 
 
+public class MySteps {
 
-public class MySteps extends SeleniumSteps{
-WebDriver driver = new FirefoxDriver();
-    public SeleniumContext context = new SeleniumContext();
-
+    WebDriver driver = new FirefoxDriver();
 
 @Given("$site")
 public void goToGoogle(String site) {
