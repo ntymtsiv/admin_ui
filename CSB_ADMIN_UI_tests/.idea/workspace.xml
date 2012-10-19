@@ -2,9 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c26f06b1-dc19-43b4-8133-f069468672f9" name="Default" comment="'-'">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/test/help/tools/SeleniumContextFixed.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/test/MyStories.class" afterPath="$PROJECT_DIR$/target/classes/com/test/MyStories.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/test/steps/MySteps$1.class" afterPath="$PROJECT_DIR$/target/classes/com/test/steps/MySteps$1.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/test/steps/MySteps.class" afterPath="$PROJECT_DIR$/target/classes/com/test/steps/MySteps.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-sample-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/jbehave-sample-1.0-SNAPSHOT.jar" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.stats" afterPath="$PROJECT_DIR$/target/jbehave/AfterStories.stats" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.stats" afterPath="$PROJECT_DIR$/target/jbehave/BeforeStories.stats" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/com.test.stories.create_news_article.stats" afterPath="$PROJECT_DIR$/target/jbehave/com.test.stories.create_news_article.stats" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/MyStories.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/MyStories.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/create_news_article.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/create_news_article.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/test/stories/create_news_article.story" afterPath="$PROJECT_DIR$/target/classes/com/test/stories/create_news_article.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/com.test.stories.create_news_article.html" afterPath="$PROJECT_DIR$/target/jbehave/com.test.stories.create_news_article.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/com.test.stories.create_news_article.txt" afterPath="$PROJECT_DIR$/target/jbehave/com.test.stories.create_news_article.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/com.test.stories.create_news_article.xml" afterPath="$PROJECT_DIR$/target/jbehave/com.test.stories.create_news_article.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/com.test.stories.create_news_article.html" afterPath="$PROJECT_DIR$/target/jbehave/view/com.test.stories.create_news_article.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/com.test.stories.create_news_article.stats.html" afterPath="$PROJECT_DIR$/target/jbehave/view/com.test.stories.create_news_article.stats.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/com.test.stories.create_news_article.txt.html" afterPath="$PROJECT_DIR$/target/jbehave/view/com.test.stories.create_news_article.txt.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/com.test.stories.create_news_article.xml.html" afterPath="$PROJECT_DIR$/target/jbehave/view/com.test.stories.create_news_article.xml.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/index.html" afterPath="$PROJECT_DIR$/target/jbehave/view/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave/view/reports.html" afterPath="$PROJECT_DIR$/target/jbehave/view/reports.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="jbehave-sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -65,7 +87,7 @@
       <file leaf-file-name="create_news_article.story" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/create_news_article.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="1" column="10" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -74,10 +96,8 @@
       <file leaf-file-name="MySteps.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="70" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="45" column="47" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,8 +114,21 @@
       <file leaf-file-name="MyStories.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/MyStories.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="73" selection-start="1575" selection-end="1575" vertical-scroll-proportion="0.29049295">
-              <folding />
+            <state line="36" column="64" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.49360147">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SeleniumContextFixed.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/help/tools/SeleniumContextFixed.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="24" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,10 +171,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/my.story" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/add_new_member.story" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedadd_new_member.story" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedStory.story" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/MyStories.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/create_news_article.story" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/help/tools/SeleniumStepMonitorFixed.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/help/tools/SeleniumContextFixed.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/MyStories.java" />
       </list>
     </option>
   </component>
@@ -153,8 +188,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="706" />
-    <option name="y" value="19" />
+    <option name="x" value="564" />
+    <option name="y" value="34" />
     <option name="width" value="1430" />
     <option name="height" value="1055" />
   </component>
@@ -167,7 +202,7 @@
     <OptionsSetting value="true" id="Edit" />
     <OptionsSetting value="true" id="Undo Check Out" />
     <OptionsSetting value="true" id="Get Latest Version" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -186,20 +221,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CSB_ADMIN_UI_tests" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jbehave-sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -280,6 +301,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSB_ADMIN_UI_tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSB_ADMIN_UI_tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tools" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSB_ADMIN_UI_tests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jbehave-sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -289,13 +354,13 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -326,24 +391,6 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -370,6 +417,24 @@
       <envs />
       <properties />
       <listeners />
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Make" enabled="true" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -482,7 +547,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="706" y="19" width="1430" height="1055" extended-state="0" />
+    <frame x="564" y="34" width="1430" height="1055" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -496,7 +561,6 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -506,6 +570,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -631,14 +696,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/create_news_article.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="1" column="10" selection-start="11" selection-end="11" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="70" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.0">
+        <state line="45" column="47" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/help/tools/SeleniumContextFixed.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="24" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -647,8 +719,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/MyStories.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="73" selection-start="1575" selection-end="1575" vertical-scroll-proportion="0.29049295">
-          <folding />
+        <state line="36" column="64" selection-start="1334" selection-end="1334" vertical-scroll-proportion="0.49360147">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

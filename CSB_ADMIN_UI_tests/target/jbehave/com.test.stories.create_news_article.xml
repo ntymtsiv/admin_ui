@@ -7,5 +7,6 @@
 <step outcome="successful">When I set field Member_Name: &apos;John Doe&apos;</step>
 <step outcome="successful">When I set field Article: &apos;-Hello flowers -Hello, Richard -Hello, Sun -Hello, Richard...&apos;</step>
 <step outcome="successful">When I press <parameter>Save &amp; Publish</parameter></step>
+<step outcome="successful">Then Close after <parameter>5</parameter> seconds</step>
 </scenario>
 </story>

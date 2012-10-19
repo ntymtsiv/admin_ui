@@ -1,6 +1,7 @@
 package com.test.steps;
 
 import org.jbehave.core.annotations.*;
+import org.jbehave.web.selenium.SeleniumContext;
 import org.jbehave.web.selenium.SeleniumSteps;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
@@ -18,14 +19,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class MySteps extends SeleniumSteps{
 WebDriver driver = new FirefoxDriver();
-
+    public SeleniumContext context = new SeleniumContext();
 
 
 @Given("$site")
 public void goToGoogle(String site) {
     driver.manage().window().maximize();
     driver.get(site);
-System.out.println("Page title is: " + driver.getTitle());   }
+System.out.println("Page title is: " + driver.getTitle());
+
+
+}
 
 @When("find $word")
 
