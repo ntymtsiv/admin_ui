@@ -81,7 +81,7 @@ public void pressButton(final String button) throws  InterruptedException {
     driver.findElement(By.className(Button_class)).findElement(By.className(button_id)).click();
     Thread.sleep(3000L);
 }
-    @When("I press Delete")
+    @When("I Delete")
     public void DeleteArticle(){
       driver.findElement(By.xpath("//html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/div/div/div[6]/div/div/a[2]")).click();
     }
