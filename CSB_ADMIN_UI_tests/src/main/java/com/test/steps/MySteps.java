@@ -63,9 +63,9 @@ public void select_tab(String tab){
     driver.findElement(By.id("main-nav")).findElement(By.xpath("li["+tab_nav+"]/a")).click();
 
 }
-@When("I scroll")
-public void scroll() throws InterruptedException{
-    ((JavascriptExecutor)driver).executeScript("scrollTo(0,10000)");
+@When("I scroll $par")
+public void scroll(String par) throws InterruptedException{
+    ((JavascriptExecutor)driver).executeScript("scrollTo(0,"+par+")");
     Thread.sleep(5000L);
 }
 @When("I press $button")
@@ -88,12 +88,8 @@ public void pressButton(final String button) throws  InterruptedException {
 }
     @When("I sel $button")
     public void DeleteArticle(String button){
-        String path="";
-        if(button.equals("Delete"))
-            path="//html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/div/div/div[6]/div/div/a[2]";
-        else if(button.equals("Edit Draft"))
-            path="//html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/div/div/div[6]/div/a";
-      driver.findElement(By.xpath(path)).click();
+
+      driver.findElement(By.partialLinkText(button)).click();
     }
 
 
@@ -138,6 +134,12 @@ public void set_fields(String field, String value) throws  InterruptedException 
     WebElement element =driver.findElement(By.id(field_id));
     element.sendKeys(value);
     Thread.sleep(1000L); }
+
+@When("Pause $sec")
+public void pause(int sec)throws  InterruptedException{
+    sec=sec*1000;
+    Thread.sleep(sec);
+}
 
 @When("I set $field $value")
 public void set_checkbox(String field, String value) throws  InterruptedException {
