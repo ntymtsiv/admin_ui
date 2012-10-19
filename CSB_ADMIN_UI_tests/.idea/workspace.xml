@@ -2,35 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c26f06b1-dc19-43b4-8133-f069468672f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.stats" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.stats" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.txt.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.xml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.txt.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.xml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/reports.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/Story.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedStory.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/test/MyStories.class" afterPath="$PROJECT_DIR$/target/classes/com/test/MyStories.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/test/steps/MySteps.class" afterPath="$PROJECT_DIR$/target/classes/com/test/steps/MySteps.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-sample-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/jbehave-sample-1.0-SNAPSHOT.jar" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/test/help/tools/xpathFinder.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/MyStories.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/MyStories.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/help/tools/xpathFinder.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/help/tools/xpathFinder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="jbehave-sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -88,26 +62,44 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MySteps.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MySteps.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="44" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0">
+            <state line="10" column="29" selection-start="412" selection-end="412" vertical-scroll-proportion="0.26408452">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1612#1768#0" expanded="true" />
-                <element signature="e#1761#1762#0" expanded="true" />
+                <element signature="e#1434#1590#0" expanded="true" />
+                <element signature="e#1583#1584#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="xpathFinder.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/help/tools/xpathFinder.java">
+      <file leaf-file-name="SeleniumContextFixed.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/help/tools/SeleniumContextFixed.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="56" selection-start="422" selection-end="422" vertical-scroll-proportion="0.4753521">
+            <state line="4" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helpTools.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/help/tools/helpTools.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="38" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Create_news_article.story" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,7 +107,7 @@
       <file leaf-file-name="MyStories.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/MyStories.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="81" selection-start="1833" selection-end="1833" vertical-scroll-proportion="-14.4">
+            <state line="47" column="81" selection-start="1894" selection-end="1894" vertical-scroll-proportion="-14.4">
               <folding />
             </state>
           </provider>
@@ -151,7 +143,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/jbehave-sample.iml" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/SameThreadEmbedderImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/aaaa.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/my.story" />
@@ -163,10 +154,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/test/help/tools/SeleniumContextFixed.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/MyStories.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/help/tools/xpathFinder.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/Story.story" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/help/tools/xpathFinder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/help/tools/helpTools.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
       </list>
     </option>
   </component>
@@ -579,7 +571,15 @@
       <created>1350644236181</created>
       <updated>1350644236181</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Merge branch 'master' into tymtsiv&#10;&#10;Conflicts:&#10;&#9;CSB_ADMIN_UI_tests/.idea/workspace.xml&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/help/tools/xpathFinder.java&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/steps/MySteps.java&#10;">
+      <created>1350662653812</created>
+      <updated>1350662653812</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Merge branch 'master' into tymtsiv&#10;&#10;Conflicts:&#10;&#9;CSB_ADMIN_UI_tests/.idea/workspace.xml&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/help/tools/xpathFinder.java&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/steps/MySteps.java&#10;">
+      <created>1350663286030</created>
+      <updated>1350663286030</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -597,6 +597,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -606,7 +607,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295711" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -648,7 +648,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="'-'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' into tymtsiv&#10;&#10;Conflicts:&#10;&#9;CSB_ADMIN_UI_tests/.idea/workspace.xml&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/help/tools/xpathFinder.java&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/steps/MySteps.java&#10;" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -665,6 +665,7 @@
     <MESSAGE value="'add close browser after delay &quot;Then Close after $sec seconds&quot;'" />
     <MESSAGE value="'+excludedStory'" />
     <MESSAGE value="'-'" />
+    <MESSAGE value="Merge branch 'master' into tymtsiv&#10;&#10;Conflicts:&#10;&#9;CSB_ADMIN_UI_tests/.idea/workspace.xml&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/help/tools/xpathFinder.java&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/steps/MySteps.java&#10;" />
   </component>
   <component name="VssConfiguration">
     <option name="CLIENT_PATH" value="" />
@@ -713,34 +714,9 @@
         <state line="12" column="68" selection-start="444" selection-end="456" vertical-scroll-proportion="0.19760479" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/help/tools/SeleniumContextFixed.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="44" selection-start="957" selection-end="957" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1612#1768#0" expanded="true" />
-            <element signature="e#1761#1762#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="35" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="23" selection-start="392" selection-end="418" vertical-scroll-proportion="0.24680074">
           <folding />
         </state>
       </provider>
@@ -754,16 +730,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/MyStories.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="81" selection-start="1833" selection-end="1833" vertical-scroll-proportion="-14.4">
+        <state line="47" column="81" selection-start="1894" selection-end="1894" vertical-scroll-proportion="-14.4">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/help/tools/xpathFinder.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/help/tools/SeleniumContextFixed.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="56" selection-start="422" selection-end="422" vertical-scroll-proportion="0.4753521">
+        <state line="4" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="23" selection-start="392" selection-end="418" vertical-scroll-proportion="0.24680074">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/help/tools/helpTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="38" selection-start="363" selection-end="363" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="29" selection-start="412" selection-end="412" vertical-scroll-proportion="0.26408452">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1434#1590#0" expanded="true" />
+            <element signature="e#1583#1584#0" expanded="true" />
           </folding>
         </state>
       </provider>
