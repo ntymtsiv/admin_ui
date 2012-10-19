@@ -64,8 +64,9 @@ public void select_tab(String tab){
 
 }
 @When("I scroll")
-public void scroll(){
+public void scroll() throws InterruptedException{
     ((JavascriptExecutor)driver).executeScript("scrollTo(0,10000)");
+    Thread.sleep(5000L);
 }
 @When("I press $button")
 public void pressButton(final String button) throws  InterruptedException {
