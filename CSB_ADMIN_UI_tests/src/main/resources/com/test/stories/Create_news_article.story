@@ -6,6 +6,7 @@ When I set field Headline: 'Hello World2'
 When I set field Sub-Headline: 'hello'
 When I set field Member_Name: 'John Doe'
 When I set field Article: '-Hello flowers -Hello, Richard -Hello, Sun -Hello, Richard...'
+When I scroll
 When I press Save & Publish
 
 Scenario: Create Article 2
@@ -15,6 +16,7 @@ When I set field Headline: 'Hello all2'
 When I set field Sub-Headline: 'hi'
 When I set field Member_Name: 'Adam Patrick'
 When I set field Article: 'You are awesome'
+When I scroll
 When I press Save & Publish
 
 Scenario: Delete Article 2

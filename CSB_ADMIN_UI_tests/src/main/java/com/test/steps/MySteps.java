@@ -12,6 +12,7 @@ import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.test.help.tools.xpathFinder;
+import org.openqa.selenium.JavascriptExecutor;
 
 
 
@@ -25,8 +26,7 @@ public class MySteps {
 public void goToGoogle(String site) {
     driver.manage().window().maximize();
     driver.get(site);
-    xpathFinder path= new xpathFinder();
-    path.findXpathByName(driver);
+
 
 
 }
@@ -62,6 +62,10 @@ public void select_tab(String tab){
         tab_nav="4";
     driver.findElement(By.id("main-nav")).findElement(By.xpath("li["+tab_nav+"]/a")).click();
 
+}
+@When("I scroll")
+public void scroll(){
+    ((JavascriptExecutor)driver).executeScript("scrollTo(0,3000)");
 }
 @When("I press $button")
 public void pressButton(final String button) throws  InterruptedException {

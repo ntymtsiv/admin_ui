@@ -65,7 +65,7 @@
       <file leaf-file-name="Create_news_article.story" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="11" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0">
+            <state line="18" column="13" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -74,11 +74,11 @@
       <file leaf-file-name="MySteps.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="16" selection-start="2709" selection-end="2709" vertical-scroll-proportion="0.64102566">
+            <state line="67" column="67" selection-start="2040" selection-end="2040" vertical-scroll-proportion="0.34188035">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1490#1646#0" expanded="true" />
-                <element signature="e#1639#1640#0" expanded="true" />
+                <element signature="e#1463#1619#0" expanded="true" />
+                <element signature="e#1612#1613#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -562,7 +562,11 @@
       <created>1350641788425</created>
       <updated>1350641788425</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="'-'">
+      <created>1350641880655</created>
+      <updated>1350641880655</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -742,18 +746,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="11" selection-start="789" selection-end="789" vertical-scroll-proportion="0.0">
+        <state line="18" column="13" selection-start="730" selection-end="730" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="16" selection-start="2709" selection-end="2709" vertical-scroll-proportion="0.64102566">
+        <state line="67" column="67" selection-start="2040" selection-end="2040" vertical-scroll-proportion="0.34188035">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1490#1646#0" expanded="true" />
-            <element signature="e#1639#1640#0" expanded="true" />
+            <element signature="e#1463#1619#0" expanded="true" />
+            <element signature="e#1612#1613#0" expanded="true" />
           </folding>
         </state>
       </provider>
