@@ -19,3 +19,4 @@ When I press Save & Publish
 
 Scenario: Delete Article 2
 When I Delete
+When I Edit Draft

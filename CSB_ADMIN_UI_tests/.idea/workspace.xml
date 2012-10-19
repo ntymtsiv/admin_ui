@@ -2,27 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c26f06b1-dc19-43b4-8133-f069468672f9" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.stats" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/AfterStories.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.stats" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/BeforeStories.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.stats.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.txt.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/AfterStories.xml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.stats.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.txt.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/BeforeStories.xml.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/jbehave/view/reports.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/test/steps/MySteps.class" afterPath="$PROJECT_DIR$/target/classes/com/test/steps/MySteps.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/jbehave-sample-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/target/jbehave-sample-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
     </list>
     <ignored path="jbehave-sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -83,7 +68,7 @@
       <file leaf-file-name="Create_news_article.story" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="7" selection-start="766" selection-end="766" vertical-scroll-proportion="0.42735043">
+            <state line="21" column="7" selection-start="780" selection-end="790" vertical-scroll-proportion="0.44871795">
               <folding />
             </state>
           </provider>
@@ -92,7 +77,7 @@
       <file leaf-file-name="MySteps.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="12" selection-start="2705" selection-end="2705" vertical-scroll-proportion="0.0">
+            <state line="89" column="95" selection-start="3068" selection-end="3068" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1490#1646#0" expanded="true" />
@@ -168,8 +153,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/Story.story" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/help/tools/xpathFinder.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
       </list>
     </option>
   </component>
@@ -572,7 +557,11 @@
       <created>1350641334726</created>
       <updated>1350641334726</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="'-'">
+      <created>1350641492884</created>
+      <updated>1350641492884</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -752,7 +741,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="12" selection-start="2705" selection-end="2705" vertical-scroll-proportion="0.0">
+        <state line="89" column="95" selection-start="3068" selection-end="3068" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#1490#1646#0" expanded="true" />
@@ -763,7 +752,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="7" selection-start="766" selection-end="766" vertical-scroll-proportion="0.42735043">
+        <state line="21" column="7" selection-start="780" selection-end="790" vertical-scroll-proportion="0.44871795">
           <folding />
         </state>
       </provider>
