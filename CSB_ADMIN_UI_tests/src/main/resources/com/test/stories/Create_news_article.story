@@ -21,4 +21,3 @@ When I press Save & Publish
 
 Scenario: Delete Article 2
 When I  sel Delete
-When I sel Edit Draft
