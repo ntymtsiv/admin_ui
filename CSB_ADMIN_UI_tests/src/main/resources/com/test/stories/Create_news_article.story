@@ -19,4 +19,4 @@ When I press Save & Publish
 
 Scenario: Delete Article 2
 When I press Delete with headline 'Hello all'
-!--When I press Edit Draft with headline 'Hello World'
+
