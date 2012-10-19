@@ -78,6 +78,8 @@ public void pressButton(final String button) throws  InterruptedException {
     else if (button.equals("Delete"))  {
         Button_class="pull-right";
         button_id="btn-danger"; }
+    else
+        throw new RuntimeException();
 
     driver.findElement(By.className(Button_class)).findElement(By.className(button_id)).click();
     Thread.sleep(3000L);
