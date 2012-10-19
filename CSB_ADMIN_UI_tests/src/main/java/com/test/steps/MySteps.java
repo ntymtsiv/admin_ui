@@ -78,13 +78,15 @@ public void pressButton(final String button) throws  InterruptedException {
     else if (button.equals("Save & Publish"))  {
         Button_class="form-actions";
         button_id="pull-right"; }
-    else if (button.equals("Delete"))  {
-        Button_class="pull-right";
-        button_id="btn-danger"; }
-
     driver.findElement(By.className(Button_class)).findElement(By.className(button_id)).click();
     Thread.sleep(3000L);
 }
+    @When("I press Delete")
+    public void DeleteArticle(){
+      driver.findElement(By.xpath("//html/body/div[2]/div/div/div[2]/div/div/div/div/div/div/div/div/div[6]/div/div/a[2]")).click();
+    }
+
+
 @When("I pres Birthday")
 public void birthday(){
      driver.findElement(By.id("dt")).sendKeys("1991/12/12");
