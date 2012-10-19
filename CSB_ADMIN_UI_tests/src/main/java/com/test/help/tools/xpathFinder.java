@@ -9,8 +9,6 @@ import org.openqa.selenium.WebDriverBackedSelenium;
 
 public class xpathFinder {
 public void findXpathByName(WebDriver driver){
-    DefaultSelenium WebDriver = new WebDriverBackedSelenium(driver,"google.com");
 
-    System.out.println(WebDriver.getBodyText());
 }
 }

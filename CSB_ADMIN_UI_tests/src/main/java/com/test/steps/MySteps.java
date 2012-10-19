@@ -19,18 +19,21 @@ import com.test.help.tools.xpathFinder;
 
 public class MySteps {
 
-    WebDriver driver = new HtmlUnitDriver();
+    WebDriver driver = new FirefoxDriver();
 
 @Given("$site")
 public void goToGoogle(String site) {
-    driver.manage().window().maximize();
+  //  driver.manage().window().maximize();
     driver.get(site);
-    xpathFinder path= new xpathFinder();
-    path.findXpathByName(driver);
+//    xpathFinder path= new xpathFinder();
+//    path.findXpathByName(driver);
 
 
 }
-
+@When("I awesome")
+public void awesome(){
+    System.out.println(driver.findElement(By.partialLinkText("Delete")));
+    }
 @When("find $word")
 
 public void Find_word(final String word) throws InterruptedException {
