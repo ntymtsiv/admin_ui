@@ -54,7 +54,13 @@ public void Find_word(final String word) throws InterruptedException {
 public void select_tab(String tab){
     String tab_nav="";
     System.out.println("Page title is: " + driver.getTitle());
-    if (tab.equals("Content Management"))
+    if (tab.equals("Dashboard"))
+        tab_nav="1";
+    else if (tab.equals("Groop Settings"))
+        tab_nav="2";
+    else if (tab.equals("Members Settings"))
+        tab_nav="3";
+    else if (tab.equals("Content Management"))
         tab_nav="4";
     driver.findElement(By.id("main-nav")).findElement(By.xpath("li["+tab_nav+"]/a")).click();
 
@@ -62,7 +68,7 @@ public void select_tab(String tab){
 @When("I sel $button $position")
 public void do_some_action(String button, int position){
     List<WebElement> element=driver.findElements(By.partialLinkText(button));
-    element.get(position).click();
+    element.get(position-1).click();
 
 }
 @When("I press $button")
