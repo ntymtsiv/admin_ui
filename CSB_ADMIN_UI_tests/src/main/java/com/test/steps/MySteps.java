@@ -14,7 +14,7 @@ import com.test.help.tools.*;
 public class MySteps {
 
     WebDriver driver = new FirefoxDriver();
-
+    helpTools help_tools;
 @Given("$site")
 public void goToGoogle(String site) {
   //  driver.manage().window().maximize();
@@ -24,10 +24,7 @@ public void goToGoogle(String site) {
 
 
 }
-@When("I want $button element $position")
-public void doSomeAction(String button, int position){
 
-}
 @When("find $word")
 
 public void Find_word(final String word) throws InterruptedException {
@@ -60,6 +57,15 @@ public void select_tab(String tab){
     driver.findElement(By.id("main-nav")).findElement(By.xpath("li["+tab_nav+"]/a")).click();
 
 }
+@When("I sel $button $position")
+public void do_some_action(String button, int position){
+
+   WebElement element=help_tools.find_button_by_positions(button,driver,position);
+
+
+   element.click();
+
+}
 @When("I press $button")
 public void pressButton(final String button) throws  InterruptedException {
     String button_id="",Button_class="";
@@ -82,7 +88,7 @@ public void pressButton(final String button) throws  InterruptedException {
         throw new RuntimeException();
 
     driver.findElement(By.className(Button_class)).findElement(By.className(button_id)).click();
-    Thread.sleep(3000L);
+
 }
 @When("I pres Birthday")
 public void birthday(){
@@ -124,9 +130,9 @@ public void set_fields(String field, String value) throws  InterruptedException 
          System.out.println("Error value");
     WebElement element =driver.findElement(By.id(field_id));
     element.sendKeys(value);
-    Thread.sleep(1000L); }
+ }
 
-@When("I set $field $value")
+@When("I set1 $field $value")
 public void set_checkbox(String field, String value) throws  InterruptedException {
    String grander="";
    if (value.equals("Male"))
@@ -137,7 +143,7 @@ public void set_checkbox(String field, String value) throws  InterruptedExceptio
        grander="3";
     WebElement element=driver.findElement(By.id("member_gender")).findElement(By.xpath("label["+grander+"]/input"));
    element.click();
-    Thread.sleep(2000L);
+
 }
 @Then("Close after $second seconds")
 public void close(int seconds) throws  InterruptedException{

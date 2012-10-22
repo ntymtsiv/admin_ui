@@ -66,22 +66,11 @@
       <file leaf-file-name="MySteps.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="81" column="35" selection-start="2667" selection-end="2667" vertical-scroll-proportion="0.63380283">
+            <state line="63" column="0" selection-start="2004" selection-end="2004" vertical-scroll-proportion="0.44383058">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1434#1590#0" expanded="true" />
-                <element signature="e#1583#1584#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="helpTools.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/help/tools/helpTools.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="12" selection-start="432" selection-end="462" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1360#1516#0" expanded="true" />
+                <element signature="e#1509#1510#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,7 +79,7 @@
       <file leaf-file-name="Create_news_article.story" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="16" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+            <state line="3" column="19" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -110,6 +99,17 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="63" column="35" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helpTools.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/test/help/tools/helpTools.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="89" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -149,8 +149,8 @@
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/Story.story" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/help/tools/xpathFinder.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/help/tools/helpTools.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/help/tools/helpTools.java" />
       </list>
     </option>
   </component>
@@ -575,7 +575,11 @@
       <created>1350663346874</created>
       <updated>1350663346874</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Merge branch 'master' into tymtsiv&#10;&#10;Conflicts:&#10;&#9;CSB_ADMIN_UI_tests/.idea/workspace.xml&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/help/tools/xpathFinder.java&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/steps/MySteps.java&#10;">
+      <created>1350664531862</created>
+      <updated>1350664531862</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -717,23 +721,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/MyStories.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="81" selection-start="1894" selection-end="1894" vertical-scroll-proportion="-14.4">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="23" selection-start="392" selection-end="418" vertical-scroll-proportion="0.24680074">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="35" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -747,27 +737,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/help/tools/helpTools.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="12" selection-start="432" selection-end="462" vertical-scroll-proportion="0.0">
+        <state line="12" column="89" selection-start="427" selection-end="427" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="35" selection-start="2011" selection-end="2011" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/MyStories.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="81" selection-start="1894" selection-end="1894" vertical-scroll-proportion="-14.4">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="16" selection-start="248" selection-end="248" vertical-scroll-proportion="0.0">
+        <state line="3" column="19" selection-start="168" selection-end="168" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="35" selection-start="2667" selection-end="2667" vertical-scroll-proportion="0.63380283">
+        <state line="63" column="0" selection-start="2004" selection-end="2004" vertical-scroll-proportion="0.44383058">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1434#1590#0" expanded="true" />
-            <element signature="e#1583#1584#0" expanded="true" />
+            <element signature="e#1360#1516#0" expanded="true" />
+            <element signature="e#1509#1510#0" expanded="true" />
           </folding>
         </state>
       </provider>
