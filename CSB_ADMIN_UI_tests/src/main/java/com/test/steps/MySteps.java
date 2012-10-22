@@ -10,6 +10,8 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.test.help.tools.*;
 
+import java.util.List;
+
 
 public class MySteps {
 
@@ -59,11 +61,8 @@ public void select_tab(String tab){
 }
 @When("I sel $button $position")
 public void do_some_action(String button, int position){
-
-   WebElement element=help_tools.find_button_by_positions(button,driver,position);
-
-
-   element.click();
+    List<WebElement> element=driver.findElements(By.partialLinkText(button));
+    element.get(position).click();
 
 }
 @When("I press $button")
