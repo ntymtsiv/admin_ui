@@ -1,13 +1,9 @@
 
-Scenario: I can add member
+Scenario: I can create member
 Given a system state
-When I do something
-Then system is in a different state
 
 Scenario: I can edit member
 Given a system state
-When I do something
-Then system is in a different state
 
 Scenario: I can delete member
 Given a system state
@@ -18,7 +14,7 @@ Given a system state
 Scenario: I can block message sented by member
 Given a system state
 
-Scenario: I can block message sented by member
+Scenario: I can unblock message sented by member
 Given a system state
 
 Scenario: I can send message by member
