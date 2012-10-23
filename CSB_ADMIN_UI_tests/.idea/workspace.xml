@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c26f06b1-dc19-43b4-8133-f069468672f9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedMemberSettings.story" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/test/steps/MySteps$1.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/Story.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/Story.story" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story" />
     </list>
     <ignored path="jbehave-sample.iws" />
@@ -83,10 +83,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="excludedCreate_news_article.story" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="excludedMemberSettings.story" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedMemberSettings.story">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="27" selection-start="239" selection-end="239" vertical-scroll-proportion="0.30164534">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="excludedCreate_news_article.story" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="72" selection-start="640" selection-end="640" vertical-scroll-proportion="0.52102375">
+            <state line="4" column="0" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -151,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/my.story" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/add_new_member.story" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedadd_new_member.story" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedStory.story" />
@@ -164,9 +172,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/test/help/tools/helpTools.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/Create_news_article.story" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/discraption" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/Story.story" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedMemberSettings.story" />
       </list>
     </option>
   </component>
@@ -178,8 +187,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="516" />
-    <option name="y" value="34" />
+    <option name="x" value="609" />
+    <option name="y" value="80" />
     <option name="width" value="1430" />
     <option name="height" value="1055" />
   </component>
@@ -375,7 +384,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="preferences.fileTypes" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -611,11 +620,15 @@
       <created>1350906567457</created>
       <updated>1350906567457</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Merge branch 'master' into tymtsiv&#10;&#10;Conflicts:&#10;&#9;CSB_ADMIN_UI_tests/.idea/workspace.xml&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/help/tools/xpathFinder.java&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/steps/MySteps.java&#10;">
+      <created>1350994563203</created>
+      <updated>1350994563203</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="516" y="34" width="1430" height="1055" extended-state="0" />
+    <frame x="609" y="80" width="1430" height="1055" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -808,7 +821,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="72" selection-start="640" selection-end="640" vertical-scroll-proportion="0.52102375">
+        <state line="4" column="0" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedMemberSettings.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="27" selection-start="239" selection-end="239" vertical-scroll-proportion="0.30164534">
           <folding />
         </state>
       </provider>
