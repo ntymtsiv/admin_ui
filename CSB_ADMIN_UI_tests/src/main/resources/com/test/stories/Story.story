@@ -1,4 +1,5 @@
 Scenario: Test
 
-Given http://stress-test2-1104820028.us-east-1.elb.amazonaws.com/admin/admin/members
-When I sel Edit 3
+Given file:///home/tymtsiv/Work/clickatell-spotbot/clickatell-spotbot/admin-web/src/main/webapp/member.html
+When I select tab Groop Settings
+When I Delete

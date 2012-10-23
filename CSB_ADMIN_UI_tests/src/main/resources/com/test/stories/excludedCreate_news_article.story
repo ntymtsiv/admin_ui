@@ -7,7 +7,7 @@ When I set field Headline: 'Hello World 1'
 When I set field Sub-Headline: 'hello1'
 When I set field Member_Name: 'John Doe'
 When I set field Article: 'Hello World!.'
-When I press Save & Publish
+When I press 'Save & Publish'
 When I scroll 500
 
 Scenario: Create Article 2

@@ -27,29 +27,7 @@ public void goToGoogle(String site) {
 
 }
 
-@When("find $word")
 
-public void Find_word(final String word) throws InterruptedException {
-    try{
-    WebElement element = driver.findElement(By.id("userNamePrefix"));
-    // Enter something to search for
-    element.sendKeys(word);
-    }
-    catch (NoSuchElementException e)
-    {
-    System.out.println("Error page "+e);
-    }
-    driver.findElement(By.className("btn")).click();
-    // Check the title of the page
-    System.out.println("Page title is: " + driver.getTitle());
-    // Google's search is rendered dynamically with JavaScript.
-    // Wait for the page to load, timeout after 10 seconds
-    (new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
-      public Boolean apply(WebDriver d) {
-            return d.getTitle().toLowerCase().startsWith(word);
-        }
-    });
-}
 @When("I select tab $tab")
 public void select_tab(String tab){
     String tab_nav="";
@@ -65,12 +43,19 @@ public void select_tab(String tab){
     driver.findElement(By.id("main-nav")).findElement(By.xpath("li["+tab_nav+"]/a")).click();
 
 }
-@When("I sel $button $position")
+@When("I sel '$button'")
+public void do_some_action(String button){
+    driver.findElement(By.partialLinkText(button)).click();
+}
+@When("I Delete")
+  public void do_some_action2(){
+        driver.findElement(By.xpath("//*[text()='Adele_Schohan']/..")).findElement(By.className("btn-warning")).click();  }
+
+@When("I sel2 '$button' $position")
 public void do_some_action(String button, int position){
     List<WebElement> element=driver.findElements(By.partialLinkText(button));
-    element.get(position-1).click();
+    element.get(position-1).click();   }
 
-}
 @When("I press $button")
 public void pressButton(final String button) throws  InterruptedException {
     String button_id="",Button_class="";
