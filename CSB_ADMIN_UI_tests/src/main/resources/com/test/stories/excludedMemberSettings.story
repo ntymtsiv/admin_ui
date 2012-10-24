@@ -90,3 +90,10 @@ When I select tab Members Settings
 When I press Edit
 When I switch to tab Groops
 When I press Leave
+
+Scenario: I can reset form in tab Message
+When I select tab Members Settings
+When I press Edit
+When I switch to tab Message
+When I set field Message Body: 'Nevermore'
+When I press Reset Form
