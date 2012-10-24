@@ -78,6 +78,14 @@ public void pressButton(final String button) throws  InterruptedException {
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
     else if (button.equals("Delete"))
         driver.findElement(By.partialLinkText(button)).click();
+    else if (button.equals("Send"))
+        driver.findElement(By.partialLinkText(button)).click();
+    else if (button.equals("Delete Message"))
+        driver.findElement(By.xpath("//td[text()='2']/../td[5]/a[2]")).click();
+    else if (button.equals("Block"))
+        driver.findElement(By.xpath("//td[text()='2']/../td[5]/a[1]")).click();
+    else if (button.equals("Unblock"))
+        driver.findElement(By.xpath("//td[text()='2']/../td[5]/a[1]")).click();
     else if (button.equals("Save & Publish"))  {
         Button_class="form-actions";
         button_id="pull-right"; }
@@ -127,16 +135,15 @@ public void set_fields(String field, String value) throws  InterruptedException 
         field_id="bio";
     else if (field.equals("Headline")) {
         field_id="headline";
-        driver.findElement(By.id(field_id)).clear();
-        }
+        driver.findElement(By.id(field_id)).clear(); }
+    else if (field.equals("Message Body"))
+        field_id="message_body";
     else if (field.equals("Sub-Headline")) {
         field_id="subheadline";
-        driver.findElement(By.id(field_id)).clear();
-    }
+        driver.findElement(By.id(field_id)).clear();}
     else if (field.equals("Member_Name")) {
         field_id="byline";
-        driver.findElement(By.id(field_id)).clear();
-    }
+        driver.findElement(By.id(field_id)).clear();}
     else if (field.equals("Article"))
         field_id="article";
     else

@@ -36,33 +36,40 @@ Scenario: I can delete message sented by member
 When I select tab Members Settings
 When I press Edit
 When I switch to tab Message
+When I press Delete Message
 
-!--Scenario: I can block message sented by member
-!--Given a system state
-!--
-!--Scenario: I can unblock message sented by member
-!--Given a system state
-!--
-!--Scenario: I can send message by member
-!--Given a system state
-!--
-!--Scenario: I can send direct message by member
-!--Given a system state
-!--
-!--Scenario: I can send help message by member
-!--Given a system state
-!--
-!--Scenario: I can send message sented by member
-!--Given a system state
-!--
-!--Scenario: I can send message sented by member
-!--Given a system state
-!--
-!--Scenario: I can add member to groop
-!--Given a system state
-!--
-!--Scenario: I can leave from groop
-!--Given a system state
+Scenario: I can block message sented by member
+When I select tab Members Settings
+When I press Edit
+When I switch to tab Message
+When I press Block
+
+Scenario: I can unblock message sented by member
+When I select tab Members Settings
+When I press Edit
+When I switch to tab Message
+When I press Unblock
+
+
+
+
+Scenario: I can send direct message by member
+Given a system state
+
+Scenario: I can send help message by member
+Given a system state
+
+Scenario: I can send message sented by member
+Given a system state
+
+Scenario: I can send message sented by member
+Given a system state
+
+Scenario: I can add member to groop
+Given a system state
+
+Scenario: I can leave from groop
+Given a system state
 
 
 
