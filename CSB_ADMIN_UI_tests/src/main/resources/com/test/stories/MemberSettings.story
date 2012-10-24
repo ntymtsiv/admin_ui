@@ -28,5 +28,41 @@ When I set field Bio: '33333333333'
 When I set field Postal Code: '33333333333'
 When I press Save
 
+Scenario: I can delete member
+When I select tab Members Settings
+When I press Delete
+
+Scenario: I can delete message sented by member
+When I select tab Members Settings
+When I press Edit
+When I switch to tab Message
+
+!--Scenario: I can block message sented by member
+!--Given a system state
+!--
+!--Scenario: I can unblock message sented by member
+!--Given a system state
+!--
+!--Scenario: I can send message by member
+!--Given a system state
+!--
+!--Scenario: I can send direct message by member
+!--Given a system state
+!--
+!--Scenario: I can send help message by member
+!--Given a system state
+!--
+!--Scenario: I can send message sented by member
+!--Given a system state
+!--
+!--Scenario: I can send message sented by member
+!--Given a system state
+!--
+!--Scenario: I can add member to groop
+!--Given a system state
+!--
+!--Scenario: I can leave from groop
+!--Given a system state
+
 
 

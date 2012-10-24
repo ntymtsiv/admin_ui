@@ -31,7 +31,6 @@ public void goToGoogle(String site) {
 @When("I select tab $tab")
 public void select_tab(String tab){
     String tab_nav="";
-    System.out.println("Page title is: " + driver.getTitle());
     if (tab.equals("Dashboard"))
         tab_nav="1";
     else if (tab.equals("Groop Settings"))
@@ -41,7 +40,13 @@ public void select_tab(String tab){
     else if (tab.equals("Content Management"))
         tab_nav="4";
     driver.findElement(By.id("main-nav")).findElement(By.xpath("li["+tab_nav+"]/a")).click();
-
+}
+@When("I switch to tab $tab")
+public void switchToTab(String tab){
+    String tab_nav="";
+    if (tab.equals("Message"))
+        tab_nav="3";
+    driver.findElement(By.className("tabbable")).findElement(By.xpath("ul/li["+tab_nav+"]/a")).click();
 }
 @When("I sel '$button'")
 public void do_some_action(String button){
@@ -71,9 +76,8 @@ public void pressButton(final String button) throws  InterruptedException {
         driver.findElement(By.partialLinkText(button)).click();
     else if (button.equals("Save"))
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
-    else if (button.equals("Content Management"))  {
-        Button_class="form-actions";
-        button_id="btn-primary"; }
+    else if (button.equals("Delete"))
+        driver.findElement(By.partialLinkText(button)).click();
     else if (button.equals("Save & Publish"))  {
         Button_class="form-actions";
         button_id="pull-right"; }
