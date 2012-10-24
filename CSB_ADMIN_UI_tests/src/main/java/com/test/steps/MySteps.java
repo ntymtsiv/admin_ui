@@ -46,6 +46,8 @@ public void switchToTab(String tab){
     String tab_nav="";
     if (tab.equals("Message"))
         tab_nav="3";
+    if (tab.equals("Groops"))
+        tab_nav="2";
     driver.findElement(By.className("tabbable")).findElement(By.xpath("ul/li["+tab_nav+"]/a")).click();
 }
 @When("I sel '$button'")
@@ -79,9 +81,13 @@ public void pressButton(final String button) throws  InterruptedException {
     else if (button.equals("Delete"))
         driver.findElement(By.partialLinkText(button)).click();
     else if (button.equals("Send"))
-        driver.findElement(By.partialLinkText(button)).click();
+        driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
     else if (button.equals("Delete Message"))
         driver.findElement(By.xpath("//td[text()='2']/../td[5]/a[2]")).click();
+    else if (button.equals("Direct Message"))
+        driver.findElement(By.name("message_type")).findElement(By.xpath("option[2]")).click();
+    else if (button.equals("Help Message"))
+        driver.findElement(By.name("message_type")).findElement(By.xpath("option[3]")).click();
     else if (button.equals("Block"))
         driver.findElement(By.xpath("//td[text()='2']/../td[5]/a[1]")).click();
     else if (button.equals("Unblock"))
@@ -92,6 +98,11 @@ public void pressButton(final String button) throws  InterruptedException {
     else if (button.equals("Delete"))  {
         Button_class="pull-right";
         button_id="btn-danger"; }
+    else if (button.equals("Sign In"))
+        driver.findElement(By.className("btn-large")).click();
+    else if (button.equals("Add Groop"))
+        driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
+
     else
         throw new RuntimeException();
 
@@ -138,6 +149,8 @@ public void set_fields(String field, String value) throws  InterruptedException 
         driver.findElement(By.id(field_id)).clear(); }
     else if (field.equals("Message Body"))
         field_id="message_body";
+    else if (field.equals("Add Groop"))
+        field_id="add_groop";
     else if (field.equals("Sub-Headline")) {
         field_id="subheadline";
         driver.findElement(By.id(field_id)).clear();}
@@ -146,6 +159,10 @@ public void set_fields(String field, String value) throws  InterruptedException 
         driver.findElement(By.id(field_id)).clear();}
     else if (field.equals("Article"))
         field_id="article";
+    else if (field.equals("Username"))
+        field_id="username";
+    else if (field.equals("Password"))
+        field_id="password";
     else
          System.out.println("Error value");
     WebElement element =driver.findElement(By.id(field_id));
