@@ -61,10 +61,16 @@ public void pressButton(final String button) throws  InterruptedException {
     String button_id="",Button_class="";
     if (button.equals("Add Member")){
         Button_class="span9";
-        button_id="icon-plus";  }
-    else if (button.equals("Create Member"))  {
-        Button_class="form-actions";
-        button_id="btn-primary"; }
+        button_id="icon-plus";
+        driver.findElement(By.className(Button_class)).findElement(By.className(button_id)).click();}
+    else if (button.equals("Create Member"))
+//        Button_class="form-actions";
+//        button_id="btn-primary"; }
+        driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
+    else if (button.equals("Edit"))
+        driver.findElement(By.partialLinkText(button)).click();
+    else if (button.equals("Save"))
+        driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
     else if (button.equals("Content Management"))  {
         Button_class="form-actions";
         button_id="btn-primary"; }
@@ -77,13 +83,26 @@ public void pressButton(final String button) throws  InterruptedException {
     else
         throw new RuntimeException();
 
-    driver.findElement(By.className(Button_class)).findElement(By.className(button_id)).click();
+//
 
 }
-@When("I pres Birthday")
-public void birthday(){
-     driver.findElement(By.id("dt")).sendKeys("1991/12/12");
-
+@When("I set birthday '$day.$month.$year'")
+public void birthday(String day, String month, int year){
+    Integer i=1;
+    try{
+     driver.findElement(By.name("DateOfBirth_Month")).findElement(By.xpath("option["+month+"]")).click();         }
+    catch (Exception e){driver.findElement(By.name("dateofbirth_month")).findElement(By.xpath("option["+month+"]")).click();}
+    try{
+     driver.findElement(By.name("DateOfBirth_Day")).findElement(By.xpath("option["+day+"]")).click();       }
+    catch (Exception e){driver.findElement(By.name("dateofbirth_day")).findElement(By.xpath("option["+day+"]")).click();}
+    for(int tempYear=2011;i<120;i++)  {
+        if (tempYear==year)
+            break;
+        tempYear-=1;
+    }
+    try{
+    driver.findElement(By.name("DateOfBirth_Year")).findElement(By.xpath("option["+Integer.toString(i)+"]")).click();  }
+    catch (Exception e){driver.findElement(By.name("dateofbirth_year")).findElement(By.xpath("option["+Integer.toString(i)+"]")).click();}
 }
 @When("I set field $field: '$value'")
 public void set_fields(String field, String value) throws  InterruptedException {
@@ -119,19 +138,20 @@ public void set_fields(String field, String value) throws  InterruptedException 
     else
          System.out.println("Error value");
     WebElement element =driver.findElement(By.id(field_id));
+    element.clear();
     element.sendKeys(value);
  }
 
-@When("I set1 $field $value")
-public void set_checkbox(String field, String value) throws  InterruptedException {
-   String grander="";
+@When("I set gender '$value'")
+public void set_checkbox(String value) throws  InterruptedException {
+   String gander="";
    if (value.equals("Male"))
-       grander="1";
+       gander="1";
    else if (value.equals("Female"))
-       grander="2";
+       gander="2";
    else if (value.equals("Specified"))
-       grander="3";
-    WebElement element=driver.findElement(By.id("member_gender")).findElement(By.xpath("label["+grander+"]/input"));
+       gander="3";
+   WebElement element=driver.findElement(By.xpath("//*[text()='Male']/..")).findElement(By.xpath("label["+gander+"]/input"));
    element.click();
 
 }
