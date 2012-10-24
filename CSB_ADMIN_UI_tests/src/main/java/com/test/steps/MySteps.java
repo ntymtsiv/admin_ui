@@ -92,6 +92,10 @@ public void pressButton(final String button) throws  InterruptedException {
         driver.findElement(By.xpath("//td[text()='2']/../td[5]/a[1]")).click();
     else if (button.equals("Unblock"))
         driver.findElement(By.xpath("//td[text()='2']/../td[5]/a[1]")).click();
+    else if (button.equals("Leave"))
+        driver.findElement(By.partialLinkText(button)).click();
+    else if (button.equals("Reset Form"))
+        driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
     else if (button.equals("Save & Publish"))  {
         Button_class="form-actions";
         button_id="pull-right"; }

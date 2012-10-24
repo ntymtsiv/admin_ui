@@ -85,6 +85,8 @@ When I switch to tab Groops
 When I set field Add Groop: 'Baratrum'
 When I press Add Groop
 
-
-
-
+Scenario: I can leave from groop
+When I select tab Members Settings
+When I press Edit
+When I switch to tab Groops
+When I press Leave
