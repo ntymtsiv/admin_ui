@@ -44,10 +44,11 @@ public void select_tab(String tab){
 @When("I switch to tab $tab")
 public void switchToTab(String tab){
     String tab_nav="";
-    if (tab.equals("Message"))
+    if (tab.equals("Messages"))
         tab_nav="3";
-    if (tab.equals("Groops"))
+    if (tab.equals("Groops")||tab.equals("Members"))
         tab_nav="2";
+
     driver.findElement(By.className("tabbable")).findElement(By.xpath("ul/li["+tab_nav+"]/a")).click();
 }
 @When("I sel '$button'")
@@ -76,6 +77,8 @@ public void pressButton(final String button) throws  InterruptedException {
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
     else if (button.equals("Edit"))
         driver.findElement(By.partialLinkText(button)).click();
+    else if (button.equals("Add"))
+        driver.findElement(By.xpath("//button[text()='Add']")).click();
     else if (button.equals("Save"))
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
     else if (button.equals("Delete"))
@@ -191,6 +194,9 @@ public void set_fields(String field, String value) throws  InterruptedException 
         field_id="groop_phone_number";
     else if (field.equals("Groop Info"))
         field_id="groop_description";
+    else if (field.equals("Input Member Name"))
+        field_id="mobile_number";
+
     else
 
          System.out.println("Error value");
