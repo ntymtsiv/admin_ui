@@ -26,37 +26,91 @@ When I select tab Groop Settings
 When I press Delete
 
 Scenario: I can add member to groop
-Given a system state
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Members
+When I set field Input Member Name: '3333333'
+When I press Add
 
 Scenario: I can remove member from groop
-Given a system state
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Members
+When I press Remove
 
 Scenario: I can block member
-Given a system state
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Members
+When I press Block Member
 
 Scenario: I can unblock member
-Given a system state
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Members
+When I press Unblock Member
 
 Scenario: I can send Hey
-Given a system state
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Messages
+When I select type of message Hey
+When I set field Recipient: '3334322341'
+When I set field Message Body: '3334322341'
+When I press Save (send message)
 
 Scenario: I can send Groop message
-Given a system state
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Messages
+When I set field Recipient: '3334322341'
+When I set field Message Body: '3334322341'
+When I press Save (send message)
+
+Scenario: I can cancel send message
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Messages
+When I set field Recipient: '3334322341'
+When I set field Message Body: '3334322341'
+When I press Cancel (send message)
+
 
 Scenario: I can send Hey with perk
-Given a system state
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Messages
+When I select type of message Hey with perk
+When I set field Recipient: '3334322341'
+When I set field Message Body: '3334322341'
+When I press Save (send message)
 
 Scenario: I can send Direct message
-Given a system state
-
-Scenario: I can send Hey
-Given a system state
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Messages
+When I select type of message Direct Message
+When I set field Recipient: '3334322341'
+When I set field Message Body: '3334322341'
+When I press Save (send message)
 
 Scenario: I can block message sented by groop
-Given a system state
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Messages
+When I press Block
+
 
 Scenario: I can unblock message sented by groop
-Given a system state
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Messages
+When I press Unlock
+
 
 Scenario: I can delete message sented by groop
-Given a system state
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Messages
+When I press Delete Message
+

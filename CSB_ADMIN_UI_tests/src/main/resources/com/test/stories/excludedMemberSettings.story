@@ -48,7 +48,7 @@ Scenario: I can send direct message by member
 When I select tab Members Settings
 When I press Edit
 When I switch to tab Messages
-When I press Direct Message
+When I select type of message Direct Message
 When I set field Message Body: 'Nevermore'
 When I press Send
 
@@ -56,7 +56,7 @@ Scenario: I can send help message by member
 When I select tab Members Settings
 When I press Edit
 When I switch to tab Messages
-When I press Help Message
+When I select type of message Help Message
 When I set field Message Body: 'Nevermore'
 When I press Send
 

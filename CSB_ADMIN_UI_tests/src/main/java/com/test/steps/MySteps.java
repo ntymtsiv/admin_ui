@@ -64,6 +64,10 @@ public void do_some_action(String button, int position){
     List<WebElement> element=driver.findElements(By.partialLinkText(button));
     element.get(position-1).click();   }
 
+@When("I select type of message $type")
+public void messageType(String type){
+    driver.findElement(By.xpath("//option[text()='"+type+"']")).click(); }
+
 @When("I press $button")
 public void pressButton(final String button) throws  InterruptedException {
     String button_id="",Button_class="";
@@ -81,16 +85,20 @@ public void pressButton(final String button) throws  InterruptedException {
         driver.findElement(By.xpath("//button[text()='Add']")).click();
     else if (button.equals("Save"))
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
+    else if (button.equals("Save (send message)"))
+        driver.findElement(By.id("3")).findElement(By.xpath("form/div/button")).click();
+    else if (button.equals("Cancel (send message)"))
+        driver.findElement(By.id("3")).findElement(By.xpath("form/div/button[2]")).click();
     else if (button.equals("Delete"))
         driver.findElement(By.partialLinkText(button)).click();
     else if (button.equals("Send"))
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
     else if (button.equals("Delete Message"))
         driver.findElement(By.xpath("//td[text()='2']/../td[5]/a[2]")).click();
-    else if (button.equals("Direct Message"))
-        driver.findElement(By.name("message_type")).findElement(By.xpath("option[2]")).click();
-    else if (button.equals("Help Message"))
-        driver.findElement(By.name("message_type")).findElement(By.xpath("option[3]")).click();
+    else if (button.equals("Remove"))
+        driver.findElement(By.xpath("//td[text()='Adele_Schohan']/../td[6]/a[2]")).click();
+    else if (button.equals("Block Member")||button.equals("Unblock Member"))
+        driver.findElement(By.xpath("//td[text()='Adele_Schohan']/../td[6]/a")).click();
     else if (button.equals("Block"))
         driver.findElement(By.xpath("//td[text()='2']/../td[5]/a[1]")).click();
     else if (button.equals("Unblock"))
@@ -196,7 +204,8 @@ public void set_fields(String field, String value) throws  InterruptedException 
         field_id="groop_description";
     else if (field.equals("Input Member Name"))
         field_id="mobile_number";
-
+    else if (field.equals("Recipient"))
+        field_id="recipient";
     else
 
          System.out.println("Error value");
