@@ -2,7 +2,6 @@
 Scenario: I can create member
 When I select tab Members Settings
 When I press Add Member
-When I set field Mobile Number: '33333333333'
 When I set field First Name: '33333333333'
 When I set field Last Name: '33333333333'
 When I set field Member Name: '33333333333'

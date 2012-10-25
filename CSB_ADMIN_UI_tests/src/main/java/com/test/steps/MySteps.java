@@ -89,12 +89,13 @@ public void pressButton(final String button) throws  InterruptedException {
     String button_id="",Button_class="";
     if (button.equals("Add Member")){
         Button_class="span9";
-        button_id="icon-plus";
+        button_id="btn-primary";
         driver.findElement(By.className(Button_class)).findElement(By.className(button_id)).click();}
-    else if (button.equals("Create Member"))
-//        Button_class="form-actions";
-//        button_id="btn-primary"; }
-        driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
+    else if (button.equals("Create Member")) {
+        Button_class="form-actions";
+       button_id="btn-primary";
+
+      driver.findElement(By.className(Button_class)).findElement(By.className(button_id)).click();}
     else if (button.equals("Edit"))
         driver.findElement(By.partialLinkText(button)).click();
     else if (button.equals("Add"))
