@@ -1,9 +1,6 @@
 
 Scenario: Sign In
-Given http://clickatell-dev-1835033989.us-east-1.elb.amazonaws.com/admin/auth/login
-When I set field Username: 'jsmith@clickatell.com'
-When I set field Password: '123123'
-When I press Sign In
+Given file:///home/tymtsiv/Work/clickatell-spotbot/clickatell-spotbot/admin-web/src/main/webapp/member.html
 
 Scenario: I can create member
 When I select tab Members Settings
@@ -94,6 +91,6 @@ When I press Leave
 Scenario: I can reset form in tab Message
 When I select tab Members Settings
 When I press Edit
-When I switch to tab Message
+When I switch to tab Messages
 When I set field Message Body: 'Nevermore'
 When I press Reset Form

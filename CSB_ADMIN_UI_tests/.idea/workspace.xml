@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c26f06b1-dc19-43b4-8133-f069468672f9" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedGroopSettings.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/GroopSettings.story" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedMemberSettings.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/MemberSettings.story" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/tempStory.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedtempStory.story" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedGroopSettings.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedGroopSettings.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedMemberSettings.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedMemberSettings.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/tempStory.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/tempStory.story" />
     </list>
     <ignored path="jbehave-sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,34 +67,36 @@
       <file leaf-file-name="MySteps.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="88" selection-start="3941" selection-end="3941" vertical-scroll-proportion="-17.84">
+            <state line="18" column="41" selection-start="556" selection-end="556" vertical-scroll-proportion="27.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MemberSettings.story" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/MemberSettings.story">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="93" column="29" selection-start="2660" selection-end="2660" vertical-scroll-proportion="0.7790055">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="excludedMemberSettings.story" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedMemberSettings.story">
+      <file leaf-file-name="excludedtempStory.story" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedtempStory.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="0" selection-start="1973" selection-end="2000" vertical-scroll-proportion="-2.52">
+            <state line="2" column="0" selection-start="42" selection-end="149" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tempStory.story" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/tempStory.story">
+      <file leaf-file-name="GroopSettings.story" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/GroopSettings.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="150" selection-end="250" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="excludedGroopSettings.story" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedGroopSettings.story">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="27" selection-start="3267" selection-end="3267" vertical-scroll-proportion="0.8943662">
+            <state line="13" column="67" selection-start="545" selection-end="545" vertical-scroll-proportion="-7.8">
               <folding />
             </state>
           </provider>
@@ -121,7 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/create_news_article.story" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/help/tools/SeleniumStepMonitorFixed.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/help/tools/SeleniumContextFixed.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -132,11 +133,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/discraption" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/Story.story" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/MemberSettings.story" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedMemberSettings.story" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/tempStory.story" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedGroopSettings.story" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/GroopSettings.story" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/MemberSettings.story" />
       </list>
     </option>
   </component>
@@ -617,7 +619,11 @@
       <created>1351157731204</created>
       <updated>1351157731204</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="Merge branch 'master' into tymtsiv&#10;&#10;Conflicts:&#10;&#9;CSB_ADMIN_UI_tests/.idea/workspace.xml&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/help/tools/xpathFinder.java&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/steps/MySteps.java&#10;">
+      <created>1351159767384</created>
+      <updated>1351159767384</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -787,30 +793,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedtempStory.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="0" selection-start="42" selection-end="149" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="88" selection-start="3941" selection-end="3941" vertical-scroll-proportion="-17.84">
+        <state line="18" column="41" selection-start="556" selection-end="556" vertical-scroll-proportion="27.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/GroopSettings.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="67" selection-start="545" selection-end="545" vertical-scroll-proportion="-7.8">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/tempStory.story">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/MemberSettings.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="150" selection-end="250" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedMemberSettings.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="0" selection-start="1973" selection-end="2000" vertical-scroll-proportion="-2.52">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedGroopSettings.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="27" selection-start="3267" selection-end="3267" vertical-scroll-proportion="0.8943662">
+        <state line="93" column="29" selection-start="2660" selection-end="2660" vertical-scroll-proportion="0.7790055">
           <folding />
         </state>
       </provider>

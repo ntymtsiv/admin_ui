@@ -9,13 +9,14 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.test.help.tools.*;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
 import java.util.List;
 
 
 public class MySteps {
 
-    WebDriver driver = new FirefoxDriver();
+    WebDriver driver = new HtmlUnitDriver();
     helpTools help_tools;
 @Given("$site")
 public void goToGoogle(String site) {
