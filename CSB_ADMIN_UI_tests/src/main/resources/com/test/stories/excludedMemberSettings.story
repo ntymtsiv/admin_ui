@@ -1,7 +1,4 @@
 
-Scenario: Sign In
-Given file:///home/tymtsiv/Work/clickatell-spotbot/clickatell-spotbot/admin-web/src/main/webapp/member.html
-
 Scenario: I can create member
 When I select tab Members Settings
 When I press Add Member
