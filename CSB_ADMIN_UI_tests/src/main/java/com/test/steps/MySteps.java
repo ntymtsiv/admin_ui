@@ -16,7 +16,7 @@ import java.util.List;
 
 public class MySteps {
 
-    WebDriver driver = new HtmlUnitDriver();
+    WebDriver driver = new FirefoxDriver();
     helpTools help_tools;
 @Given("$site")
 public void goToGoogle(String site) {

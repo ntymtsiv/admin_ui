@@ -77,7 +77,7 @@ Scenario: I can send Hey with perk
 When I select tab Groop Settings
 When I press Edit
 When I switch to tab Messages
-When I select type of message Hey with perk
+When I select type of message Hey with Perk
 When I set field Recipient: '3334322341'
 When I set field Message Body: '3334322341'
 When I press Save (send message)
