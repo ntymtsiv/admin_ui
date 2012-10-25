@@ -96,6 +96,10 @@ public void pressButton(final String button) throws  InterruptedException {
         driver.findElement(By.partialLinkText(button)).click();
     else if (button.equals("Reset Form"))
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
+    else if (button.equals("Add Groop"))                  {
+        try{
+        driver.findElement(By.xpath("//*[text()='"+button+"']")).click();}
+        catch(Exception e){driver.findElement(By.partialLinkText(button)).click();}}
     else if (button.equals("Save & Publish"))  {
         Button_class="form-actions";
         button_id="pull-right"; }
@@ -104,9 +108,6 @@ public void pressButton(final String button) throws  InterruptedException {
         button_id="btn-danger"; }
     else if (button.equals("Sign In"))
         driver.findElement(By.className("btn-large")).click();
-    else if (button.equals("Add Groop"))
-        driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
-
     else
         throw new RuntimeException();
 
@@ -148,26 +149,50 @@ public void set_fields(String field, String value) throws  InterruptedException 
         field_id="postal_code";
     else if (field.equals("Bio"))
         field_id="bio";
-    else if (field.equals("Headline")) {
+    else if (field.equals("Headline"))
         field_id="headline";
-        driver.findElement(By.id(field_id)).clear(); }
     else if (field.equals("Message Body"))
         field_id="message_body";
     else if (field.equals("Add Groop"))
         field_id="add_groop";
-    else if (field.equals("Sub-Headline")) {
+    else if (field.equals("Sub-Headline"))
         field_id="subheadline";
-        driver.findElement(By.id(field_id)).clear();}
-    else if (field.equals("Member_Name")) {
+    else if (field.equals("Member_Name"))
         field_id="byline";
-        driver.findElement(By.id(field_id)).clear();}
     else if (field.equals("Article"))
         field_id="article";
     else if (field.equals("Username"))
         field_id="username";
     else if (field.equals("Password"))
         field_id="password";
+    else if (field.equals("Groop Name"))
+        field_id="groopname";
+    else if (field.equals("Groop Owner"))
+        field_id="groopowner";
+    else if (field.equals("Groop Keyword"))
+        field_id="groop_keyword";
+    else if (field.equals("Chop Shop Store"))
+        field_id="groop_proper_name";
+    else if (field.equals("Groop Web Site"))
+        field_id="groop_web_site";
+    else if (field.equals("Groop Tag Line"))
+        field_id="groop_tag_line";
+    else if (field.equals("Groop Description"))
+        field_id="groop_description";
+    else if (field.equals("Groop Business Name"))
+        field_id="groop_business_name";
+    else if (field.equals("Groop Address"))
+        field_id="groop_address_1";
+    else if (field.equals("Groop City"))
+        field_id="groop_city";
+    else if (field.equals("Groop Postal Code"))
+        field_id="groop_postal_code";
+    else if (field.equals("Groop Phone Number"))
+        field_id="groop_phone_number";
+    else if (field.equals("Groop Info"))
+        field_id="groop_description";
     else
+
          System.out.println("Error value");
     WebElement element =driver.findElement(By.id(field_id));
     element.clear();
