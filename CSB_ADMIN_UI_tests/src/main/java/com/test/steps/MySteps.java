@@ -1,6 +1,11 @@
 package com.test.steps;
 
+import com.gargoylesoftware.htmlunit.IncorrectnessListener;
+import com.gargoylesoftware.htmlunit.NicelyResynchronizingAjaxController;
+import com.gargoylesoftware.htmlunit.SilentCssErrorHandler;
+import com.gargoylesoftware.htmlunit.WebClient;
 import org.jbehave.core.annotations.*;
+import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -11,13 +16,23 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.test.help.tools.*;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 
+
 import java.util.List;
 
 
 public class MySteps {
 
-    WebDriver driver = new FirefoxDriver();
-    helpTools help_tools;
+      WebDriver driver = new FirefoxDriver();
+
+//        WebDriver driver = new HtmlUnitDriver(true) {
+//  public WebClient modifyWebClient(WebClient client) {
+//        client.setCssErrorHandler(new SilentCssErrorHandler());
+//        client.setAjaxController(new NicelyResynchronizingAjaxController());
+//        client.setThrowExceptionOnScriptError(true);
+//        client.setCssEnabled(true);
+//
+//    return client;}};
+
 @Given("$site")
 public void goToGoogle(String site) {
   //  driver.manage().window().maximize();

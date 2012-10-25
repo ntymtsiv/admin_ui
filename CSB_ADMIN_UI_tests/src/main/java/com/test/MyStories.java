@@ -2,6 +2,8 @@ package com.test;
 
 import java.util.List;
 
+import com.gargoylesoftware.htmlunit.SilentCssErrorHandler;
+import com.gargoylesoftware.htmlunit.WebClient;
 import com.google.common.util.concurrent.MoreExecutors;
 import com.thoughtworks.selenium.Selenium;
 import com.thoughtworks.selenium.condition.ConditionRunner;
@@ -33,6 +35,7 @@ import static org.jbehave.core.reporters.Format.*;
  * </p> 
  */
 public class MyStories extends JUnitStories {
+
     private ContextView contextView = new LocalFrameContextView().sized(500, 50).located(0,600);
     private SeleniumContext context = new SeleniumContextFixed();
 
@@ -41,6 +44,7 @@ public class MyStories extends JUnitStories {
 
         Class<? extends Embeddable> embeddableClass = this.getClass();
         return new SeleniumConfiguration()
+
                 .useStoryLoader(new LoadFromClasspath(embeddableClass))
                 .useStepMonitor(new SeleniumStepMonitor(contextView,context, new SilentStepMonitor()))
                 .useStoryReporterBuilder(new StoryReporterBuilder()
