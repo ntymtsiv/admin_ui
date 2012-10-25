@@ -103,7 +103,6 @@ When I press Edit
 When I switch to tab Messages
 When I press Unblock
 
-
 Scenario: I can delete message sented by groop
 When I select tab Groop Settings
 When I press Edit
