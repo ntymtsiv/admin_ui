@@ -6,15 +6,13 @@ import com.gargoylesoftware.htmlunit.SilentCssErrorHandler;
 import com.gargoylesoftware.htmlunit.WebClient;
 import org.jbehave.core.annotations.*;
 import org.junit.Test;
-import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.test.help.tools.*;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import sun.awt.windows.ThemeReader;
 
 
 import java.util.List;
@@ -36,9 +34,8 @@ public class MySteps {
 @Given("$site")
 public void goToGoogle(String site) {
   //  driver.manage().window().maximize();
+    driver.manage().window().setPosition(new Point(1000,500));
     driver.get(site);
-//    xpathFinder path= new xpathFinder();
-//    path.findXpathByName(driver);
 
 
 }
@@ -142,26 +139,33 @@ public void pressButton(final String button) throws  InterruptedException {
         throw new RuntimeException();
 
 //
+    Thread.sleep(1000L);
+}
+//@When("I set birthday '$day.$month.$year'")
+//public void birthday(String day, String month, int year){
+//    Integer i=1;
+//    try{
+//     driver.findElement(By.name("DateOfBirth_Month")).findElement(By.xpath("option["+month+"]")).click();         }
+//    catch (Exception e){driver.findElement(By.name("dateofbirth_month")).findElement(By.xpath("option["+month+"]")).click();}
+//    try{
+//     driver.findElement(By.name("DateOfBirth_Day")).findElement(By.xpath("option["+day+"]")).click();       }
+//    catch (Exception e){driver.findElement(By.name("dateofbirth_day")).findElement(By.xpath("option["+day+"]")).click();}
+//    for(int tempYear=2011;i<120;i++)  {
+//        if (tempYear==year)
+//            break;
+//        tempYear-=1;
+//    }
+//    try{
+//    driver.findElement(By.name("DateOfBirth_Year")).findElement(By.xpath("option["+Integer.toString(i)+"]")).click();  }
+//    catch (Exception e){driver.findElement(By.name("dateofbirth_year")).findElement(By.xpath("option["+Integer.toString(i)+"]")).click();}
+//}
+@When("I set birthday $year")
+public void birthday(String year){
+    WebElement element =driver.findElement(By.id("birthDate"));
+    ((JavascriptExecutor) driver).executeScript("element.sendKeys(year);", element);
 
 }
-@When("I set birthday '$day.$month.$year'")
-public void birthday(String day, String month, int year){
-    Integer i=1;
-    try{
-     driver.findElement(By.name("DateOfBirth_Month")).findElement(By.xpath("option["+month+"]")).click();         }
-    catch (Exception e){driver.findElement(By.name("dateofbirth_month")).findElement(By.xpath("option["+month+"]")).click();}
-    try{
-     driver.findElement(By.name("DateOfBirth_Day")).findElement(By.xpath("option["+day+"]")).click();       }
-    catch (Exception e){driver.findElement(By.name("dateofbirth_day")).findElement(By.xpath("option["+day+"]")).click();}
-    for(int tempYear=2011;i<120;i++)  {
-        if (tempYear==year)
-            break;
-        tempYear-=1;
-    }
-    try{
-    driver.findElement(By.name("DateOfBirth_Year")).findElement(By.xpath("option["+Integer.toString(i)+"]")).click();  }
-    catch (Exception e){driver.findElement(By.name("dateofbirth_year")).findElement(By.xpath("option["+Integer.toString(i)+"]")).click();}
-}
+
 @When("I set field $field: '$value'")
 public void set_fields(String field, String value) throws  InterruptedException {
   String field_id="";
@@ -169,6 +173,7 @@ public void set_fields(String field, String value) throws  InterruptedException 
         field_id="mobile_number";
     else if (field.equals("First Name"))
         field_id="first_name";
+
     else if (field.equals("Last Name"))
         field_id="last_name";
     else if (field.equals("Member Name"))
@@ -196,21 +201,19 @@ public void set_fields(String field, String value) throws  InterruptedException 
     else if (field.equals("Password"))
         field_id="password";
     else if (field.equals("Groop Name"))
-        field_id="groopname";
+        field_id="name";
     else if (field.equals("Groop Owner"))
         field_id="groopowner";
     else if (field.equals("Groop Keyword"))
-        field_id="groop_keyword";
+        field_id="details.keyword";
     else if (field.equals("Chop Shop Store"))
-        field_id="groop_proper_name";
+        field_id="information.fullName";
     else if (field.equals("Groop Web Site"))
-        field_id="groop_web_site";
+        field_id="web";
     else if (field.equals("Groop Tag Line"))
-        field_id="groop_tag_line";
+        field_id="tagline";
     else if (field.equals("Groop Description"))
-        field_id="groop_description";
-    else if (field.equals("Groop Business Name"))
-        field_id="groop_business_name";
+        field_id="description";
     else if (field.equals("Groop Address"))
         field_id="groop_address_1";
     else if (field.equals("Groop City"))
@@ -222,11 +225,10 @@ public void set_fields(String field, String value) throws  InterruptedException 
     else if (field.equals("Groop Info"))
         field_id="groop_description";
     else if (field.equals("Input Member Name"))
-        field_id="mobile_number";
+        field_id="groopmember";
     else if (field.equals("Recipient"))
         field_id="recipient";
     else
-
          System.out.println("Error value");
     WebElement element =driver.findElement(By.id(field_id));
     element.clear();
@@ -246,6 +248,10 @@ public void set_checkbox(String value) throws  InterruptedException {
    element.click();
 
 }
+@When("status")
+    public void status()   {
+    System.out.println("Page title - "+driver.getTitle());
+    }
 @Then("Close after $second seconds")
 public void close(int seconds) throws  InterruptedException{
     seconds=seconds*1000;
@@ -253,6 +259,8 @@ public void close(int seconds) throws  InterruptedException{
 
     //Close the browser
     driver.quit();
+
+
 }
 
 

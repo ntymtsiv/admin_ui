@@ -2,28 +2,27 @@
 Scenario: I can create member
 When I select tab Members Settings
 When I press Add Member
-When I set field First Name: '33333333333'
-When I set field Last Name: '33333333333'
-When I set field Member Name: '33333333333'
-When I set field Member Email: '33333333333'
-When I set birthday '15.05.1967'
+When I set field Mobile Number: '19034567932'
+When I set field First Name: 'John'
+When I set field Last Name: 'Smith'
+When I set field Member Name: 'ZLOY'
+When I set field Member Email: 'ZLoy@asd.com'
+When I set birthday 1980-08-08
 When I set gender 'Female'
 When I set field Bio: '33333333333'
 When I set field Postal Code: '33333333333'
-When I press Create Member
 
 
 Scenario: I can edit member
 When I select tab Members Settings
 When I press Edit
-When I set field First Name: '33333333333'
-When I set field Last Name: '33333333333'
-When I set field Member Name: '33333333333'
-When I set field Member Email: '33333333333'
-When I set birthday '15.05.1967'
+When I set field First Name: 'Nick'
+When I set field Last Name: 'NickNick'
+When I set field Member Name: 'Nick'
+When I set field Member Email: 'nick@asd.com'
 When I set gender 'Female'
-When I set field Bio: '33333333333'
-When I set field Postal Code: '33333333333'
+When I set field Bio: 'I am awesome'
+When I set field Postal Code: '4567'
 When I press Save
 
 Scenario: I can delete member

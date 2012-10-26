@@ -6,20 +6,19 @@ When I set field Password: '123123'
 When I press Sign In
 
 Scenario: I can create groop
-Given file:///home/tymtsiv/Work/clickatell-spotbot/clickatell-spotbot/admin-web/src/main/webapp/groop.html
 When I select tab Groop Settings
 When I press Add Groop
-When I set field Groop Name: '33333333333'
-When I set field Chop Shop Store: '33333333333'
-When I set field Groop Web Site: '33333333333'
-When I set field Groop Tag Line: '33333333333'
-When I set field Groop Description: '33333333333'
-When I set field Groop Business Name: '33333333333'
-When I set field Groop Address: '33333333333'
-When I set field Groop City: '33333333333'
-When I set field Groop Postal Code: '33333333333'
-When I set field Groop Phone Number: '33333333333'
-When I set field Groop Info: '333333333ddd33'
+When I set field Groop Name: 'SportFan'
+When I set field Groop Keyword: 'goodgood'
+When I set field Chop Shop Store: 'NoneShope'
+When I set field Groop Web Site: 'sportFan.ua'
+When I set field Groop Tag Line: 'Sport is Cool'
+When I set field Groop Description: 'Best groop'
+When I set field Groop Address: ' Green st.'
+When I set field Groop City: 'San Andreas'
+When I set field Groop Postal Code: '34567'
+When I set field Groop Phone Number: '+33333333333'
+When I set field Groop Info: 'None Info ((('
 When I press Save
 
 Scenario: I can delete groop
@@ -30,7 +29,7 @@ Scenario: I can add member to groop
 When I select tab Groop Settings
 When I press Edit
 When I switch to tab Members
-When I set field Input Member Name: '3333333'
+When I set field Input Member Name: 'egngds'
 When I press Add
 
 Scenario: I can remove member from groop
