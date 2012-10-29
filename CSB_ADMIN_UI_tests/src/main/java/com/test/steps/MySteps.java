@@ -36,11 +36,7 @@ public void goToGoogle(String site) {
   //  driver.manage().window().maximize();
     driver.manage().window().setPosition(new Point(1000,500));
     driver.get(site);
-
-
 }
-
-
 @When("I select tab $tab")
 public void select_tab(String tab){
     String tab_nav="";
@@ -64,18 +60,6 @@ public void switchToTab(String tab){
 
     driver.findElement(By.className("tabbable")).findElement(By.xpath("ul/li["+tab_nav+"]/a")).click();
 }
-@When("I sel '$button'")
-public void do_some_action(String button){
-    driver.findElement(By.partialLinkText(button)).click();
-}
-@When("I Delete")
-  public void do_some_action2(){
-        driver.findElement(By.xpath("//*[text()='Adele_Schohan']/..")).findElement(By.className("btn-warning")).click();  }
-
-@When("I sel2 '$button' $position")
-public void do_some_action(String button, int position){
-    List<WebElement> element=driver.findElements(By.partialLinkText(button));
-    element.get(position-1).click();   }
 
 @When("I select type of message $type")
 public void messageType(String type){
@@ -139,8 +123,6 @@ public void pressButton(final String button) throws  InterruptedException {
         driver.findElement(By.className("btn-large")).click();
     else
         throw new RuntimeException();
-
-//
     Thread.sleep(1000L);
 }
 //@When("I set birthday '$day.$month.$year'")
@@ -165,7 +147,6 @@ public void pressButton(final String button) throws  InterruptedException {
 public void birthday(String year){
     WebElement element =driver.findElement(By.id("birthDate"));
     ((JavascriptExecutor) driver).executeScript("element.sendKeys(year);", element);
-
 }
 
 @When("I set field $field: '$value'")
@@ -175,7 +156,6 @@ public void set_fields(String field, String value) throws  InterruptedException 
         field_id="mobile_number";
     else if (field.equals("First Name"))
         field_id="first_name";
-
     else if (field.equals("Last Name"))
         field_id="last_name";
     else if (field.equals("Member Name"))
@@ -248,7 +228,6 @@ public void set_checkbox(String value) throws  InterruptedException {
        gander="3";
    WebElement element=driver.findElement(By.xpath("//*[text()='Male']/..")).findElement(By.xpath("label["+gander+"]/input"));
    element.click();
-
 }
 @Then("I check title")
     public void status()   {
@@ -259,13 +238,30 @@ public void set_checkbox(String value) throws  InterruptedException {
 public void close(int seconds) throws  InterruptedException{
     seconds=seconds*1000;
     Thread.sleep(seconds);
-
     driver.quit();
 }
-    @When("I look page title")
+@When("I change number of users to  $number")
+public void changeNumberOfUser(String number)  {
+    if(number.equals("10"))
+        number="";
+    if(number.equals("20"))
+        number="";
+    if(number.equals("100"))
+        number="";
+    if(number.equals("All Items"))
+        number="";
+    driver.findElement(By.id("")).click();
+   }
+@When("I set search-query $query")
+public void search(String query){
+    driver.findElement(By.id("")).sendKeys(query);
+}
+
+@When("I look page title")
     public String page_title(){
         String title;
       title = driver.getTitle();
+        System.out.println(driver.getTitle());
      return title;
     }
 

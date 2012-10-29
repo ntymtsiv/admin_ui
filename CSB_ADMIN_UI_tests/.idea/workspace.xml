@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c26f06b1-dc19-43b4-8133-f069468672f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreateGroopWithNullOrWrongValues.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/TempStory.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/TempStory.story" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreateGroopWithNullOrWrongValues.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreateGroopWithNullOrWrongValues.story" />
     </list>
     <ignored path="jbehave-sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,10 +63,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MySteps.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="MySteps.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="255" column="35" selection-start="10077" selection-end="10077" vertical-scroll-proportion="-6.56">
+            <state line="124" column="37" selection-start="5262" selection-end="5262" vertical-scroll-proportion="-2.0353634">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -96,7 +95,7 @@
       <file leaf-file-name="excludedMemberSettings.story" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedMemberSettings.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="0" selection-start="876" selection-end="1058" vertical-scroll-proportion="0.0">
+            <state line="32" column="0" selection-start="915" selection-end="949" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -105,7 +104,7 @@
       <file leaf-file-name="excludedGroopSettings.story" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedGroopSettings.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="212" selection-end="817" vertical-scroll-proportion="0.0">
+            <state line="4" column="30" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -114,16 +113,16 @@
       <file leaf-file-name="TempStory.story" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/TempStory.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="210" selection-end="835" vertical-scroll-proportion="0.0">
+            <state line="9" column="93" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="excludedCreateGroopWithNullOrWrongValues.story" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="excludedCreateGroopWithNullOrWrongValues.story" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreateGroopWithNullOrWrongValues.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="15" selection-start="652" selection-end="652" vertical-scroll-proportion="0.49360147">
+            <state line="52" column="5" selection-start="1855" selection-end="1874" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -163,9 +162,9 @@
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/GroopSettings.story" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedMemberSettings.story" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedGroopSettings.story" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/TempStory.story" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreateGroopWithNullOrWrongValues.story" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
       </list>
     </option>
   </component>
@@ -690,7 +689,11 @@
       <created>1351261558359</created>
       <updated>1351261558359</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Merge branch 'master' into tymtsiv&#10;&#10;Conflicts:&#10;&#9;CSB_ADMIN_UI_tests/.idea/workspace.xml&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/help/tools/xpathFinder.java&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/steps/MySteps.java&#10;">
+      <created>1351508981420</created>
+      <updated>1351508981420</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -853,9 +856,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/help/tools/helpTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="12" selection-start="469" selection-end="499" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedMemberSettings.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="0" selection-start="876" selection-end="1058" vertical-scroll-proportion="0.0">
+        <state line="32" column="0" selection-start="915" selection-end="949" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/TempStory.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="93" selection-start="319" selection-end="319" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedGroopSettings.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="30" selection-start="184" selection-end="184" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreateGroopWithNullOrWrongValues.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="5" selection-start="1855" selection-end="1874" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -867,40 +898,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedGroopSettings.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="212" selection-end="817" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/test/help/tools/helpTools.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="12" selection-start="469" selection-end="499" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="255" column="35" selection-start="10077" selection-end="10077" vertical-scroll-proportion="-6.56">
+        <state line="124" column="37" selection-start="5262" selection-end="5262" vertical-scroll-proportion="-2.0353634">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/TempStory.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="210" selection-end="835" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreateGroopWithNullOrWrongValues.story">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="15" selection-start="652" selection-end="652" vertical-scroll-proportion="0.49360147">
-          <folding />
         </state>
       </provider>
     </entry>
