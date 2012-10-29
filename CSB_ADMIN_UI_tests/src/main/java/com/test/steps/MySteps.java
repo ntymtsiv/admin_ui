@@ -125,6 +125,8 @@ public void pressButton(final String button) throws  InterruptedException {
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
     else if (button.equals("Add Groop"))                  {
         try{
+          String title;
+           title=driver.getTitle();
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();}
         catch(Exception e){driver.findElement(By.partialLinkText(button)).click();}}
     else if (button.equals("Save & Publish"))  {
@@ -248,21 +250,23 @@ public void set_checkbox(String value) throws  InterruptedException {
    element.click();
 
 }
-@When("status")
+@Then("I check title")
     public void status()   {
-    System.out.println("Page title - "+driver.getTitle());
+    if(!driver.getTitle().equals("FFF"))
+        throw new RuntimeException();
     }
 @Then("Close after $second seconds")
 public void close(int seconds) throws  InterruptedException{
     seconds=seconds*1000;
     Thread.sleep(seconds);
 
-    //Close the browser
     driver.quit();
-
-
 }
-
-
+    @When("I look page title")
+    public String page_title(){
+        String title;
+      title = driver.getTitle();
+     return title;
+    }
 
 }
