@@ -45,12 +45,19 @@ When I set field Groop City: ''
 When I set field Groop Postal Code: ''
 When I set field Groop Phone Number: ''
 When I set field Groop Info: ''
-Then I check title
+Then Groop has not been created
 
-Scenario: I can find Groop by name
+Scenario: I can find Groop by full name
 When I select tab Groop Settings
 When I press Add Groop
 When I set search-query BestGroop
+
+Scenario: I can't find Groop by name, when use find user
+Scenario: I can find Groop by name, when use find groop
+Scenario: I can't find userby name, when use find groop
+Scenario: I can find Groop by first part of name
+
+
 
 Scenario: I can change number of users
 When I select tab Members Settings

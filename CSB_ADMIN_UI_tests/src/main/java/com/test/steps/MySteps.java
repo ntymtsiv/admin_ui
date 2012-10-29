@@ -229,10 +229,14 @@ public void set_checkbox(String value) throws  InterruptedException {
    WebElement element=driver.findElement(By.xpath("//*[text()='Male']/..")).findElement(By.xpath("label["+gander+"]/input"));
    element.click();
 }
-@Then("I check title")
-    public void status()   {
-    if(!driver.getTitle().equals("FFF"))
+@Then("Groop $status")
+    public void status(String status)   {
+    if(status.equals("has not been created"))
+     if(!driver.getTitle().equals("FFF"))
         throw new RuntimeException();
+    if (status.equals("was created"))
+        if(!driver.getTitle().equals("FFF"))
+            throw new RuntimeException();
     }
 @Then("Close after $second seconds")
 public void close(int seconds) throws  InterruptedException{
@@ -256,13 +260,4 @@ public void changeNumberOfUser(String number)  {
 public void search(String query){
     driver.findElement(By.id("")).sendKeys(query);
 }
-
-@When("I look page title")
-    public String page_title(){
-        String title;
-      title = driver.getTitle();
-        System.out.println(driver.getTitle());
-     return title;
-    }
-
 }
