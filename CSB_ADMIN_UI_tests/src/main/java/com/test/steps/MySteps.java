@@ -123,6 +123,12 @@ public void pressButton(final String button) throws  InterruptedException {
         driver.findElement(By.className("btn-large")).click();
     else if(button.equals("Search All"))
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
+    else if(button.equals("dropdown"))
+        driver.findElement(By.className("search-btn-group")).findElement(By.className("dropdown-toggle")).click();
+    else if(button.equals("Groops"))
+        driver.findElement(By.className("dropdown-menu")).findElement(By.xpath("li/a")).click();
+    else if(button.equals("Members"))
+        driver.findElement(By.className("dropdown-menu")).findElement(By.xpath("li[2]/a")).click();
     else
         throw new RuntimeException();
     Thread.sleep(1000L);
@@ -273,7 +279,4 @@ public void resultsOfSearch(String user){
     else
     driver.findElement(By.className("table-bordered")).findElement(By.xpath("//*[text()='"+user+"']"));
 }
-@When("status")
-    public void stat() {
-    System.out.println(driver.getTitle());}
 }
