@@ -265,6 +265,12 @@ public void search(String query){
 }
 @Then("I found $user")
 public void resultsOfSearch(String user){
+    if(user.equals("None elements"))
+        try{
+            driver.findElement(By.className("table-bordered")).findElement(By.xpath("tbody/tr"));
+            throw new RuntimeException();  }
+        catch (NoSuchElementException e){}
+    else
     driver.findElement(By.className("table-bordered")).findElement(By.xpath("//*[text()='"+user+"']"));
 }
 @When("status")

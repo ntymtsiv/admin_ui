@@ -7,7 +7,7 @@ When I press Sign In
 
 Scenario: I can't find Groop by name, when use find user
 When I select tab Groop Settings
-When I set search-query 9sLI8iEn4nhVdh
+When I set search-query aaojue
 When I press Search All
-Then I found 9sLI8iEn4nhVdh
+Then I found None elements
 
