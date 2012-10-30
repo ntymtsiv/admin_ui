@@ -223,7 +223,7 @@ public void set_fields(String field, String value) throws  InterruptedException 
     WebElement element =driver.findElement(By.id(field_id));
     element.clear();
     element.sendKeys(value);
-    Thread.sleep(500L);
+
  }
 
 @When("I set gender '$value'")
