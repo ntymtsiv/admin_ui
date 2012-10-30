@@ -1,9 +1,4 @@
 
-Scenario: Sign In
-Given http://stress-test2-1104820028.us-east-1.elb.amazonaws.com/admin/auth/login
-When I set field Username: 'jsmith@clickatell.com'
-When I set field Password: '123123'
-When I press Sign In
 
 Scenario: Upper: I can change number of elements
 When I select tab Groop Settings
