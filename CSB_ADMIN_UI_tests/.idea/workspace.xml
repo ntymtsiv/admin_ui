@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c26f06b1-dc19-43b4-8133-f069468672f9" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedPageSwitcher.story" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedPageSwitcherNotResolved.story" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" afterPath="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/TempStory.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/TempStory.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedSearch.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedSearch.story" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedSearchNotResolved.story" afterPath="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedSearchNotResolved.story" />
     </list>
     <ignored path="jbehave-sample.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -67,7 +67,7 @@
       <file leaf-file-name="MySteps.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="130" column="85" selection-start="5757" selection-end="5757" vertical-scroll-proportion="-16.76">
+            <state line="282" column="0" selection-start="11840" selection-end="11840" vertical-scroll-proportion="-18.56">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,28 +75,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="excludedSearch.story" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedSearch.story">
+      <file leaf-file-name="excludedPageSwitcher.story" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedPageSwitcher.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="786" selection-end="956" vertical-scroll-proportion="0.0">
+            <state line="13" column="43" selection-start="578" selection-end="578" vertical-scroll-proportion="0.2923538">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="excludedSearchNotResolved.story" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedSearchNotResolved.story">
+      <file leaf-file-name="excludedPageSwitcherNotResolved.story" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedPageSwitcherNotResolved.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="27" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
+            <state line="1" column="17" selection-start="18" selection-end="44" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TempStory.story" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="TempStory.story" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/TempStory.story">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="18" selection-start="380" selection-end="380" vertical-scroll-proportion="0.26986507">
+            <state line="7" column="0" selection-start="210" selection-end="541" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -123,9 +123,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/discraption" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/Story.story" />
-        <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreate_news_article.story" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/tempStory.story" />
         <option value="$PROJECT_DIR$/src/main/java/com/test/MyStories.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/MemberSettings.story" />
@@ -135,10 +132,13 @@
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedGroopSettings.story" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedWorkingPartOfAdmineUI.story" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedCreateGroopWithNullOrWrongValues.story" />
-        <option value="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedSearchNotResolved.story" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedSearch.story" />
+        <option value="$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java" />
         <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/TempStory.story" />
+        <option value="$PROJECT_DIR$/src/main/resources/excludedPageSwitcher.story" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedPageSwitcherNotResolved.story" />
+        <option value="$PROJECT_DIR$/src/main/resources/com/test/stories/excludedPageSwitcher.story" />
       </list>
     </option>
   </component>
@@ -150,8 +150,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="377" />
-    <option name="y" value="50" />
+    <option name="x" value="414" />
+    <option name="y" value="47" />
     <option name="width" value="1430" />
     <option name="height" value="1055" />
   </component>
@@ -358,6 +358,9 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/com/test/stories" />
     </key>
   </component>
   <component name="RunManager">
@@ -684,11 +687,15 @@
       <created>1351613027357</created>
       <updated>1351613027357</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Merge branch 'master' into tymtsiv&#10;&#10;Conflicts:&#10;&#9;CSB_ADMIN_UI_tests/.idea/workspace.xml&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/help/tools/xpathFinder.java&#10;&#9;CSB_ADMIN_UI_tests/src/main/java/com/test/steps/MySteps.java&#10;">
+      <created>1351614239641</created>
+      <updated>1351614239641</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="377" y="50" width="1430" height="1055" extended-state="0" />
+    <frame x="414" y="47" width="1430" height="1055" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -882,32 +889,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedSearchNotResolved.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="27" selection-start="28" selection-end="28" vertical-scroll-proportion="0.022488756">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedSearch.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="786" selection-end="956" vertical-scroll-proportion="0.0">
+        <state line="6" column="54" selection-start="209" selection-end="209" vertical-scroll-proportion="0.13493253">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/test/steps/MySteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="130" column="85" selection-start="5757" selection-end="5757" vertical-scroll-proportion="-16.76">
+        <state line="282" column="0" selection-start="11840" selection-end="11840" vertical-scroll-proportion="-18.56">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedSearchNotResolved.story">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/TempStory.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="27" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0">
+        <state line="7" column="0" selection-start="210" selection-end="541" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/TempStory.story">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedPageSwitcherNotResolved.story">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="18" selection-start="380" selection-end="380" vertical-scroll-proportion="0.26986507">
+        <state line="1" column="17" selection-start="18" selection-end="44" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/com/test/stories/excludedPageSwitcher.story">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="43" selection-start="578" selection-end="578" vertical-scroll-proportion="0.2923538">
           <folding />
         </state>
       </provider>

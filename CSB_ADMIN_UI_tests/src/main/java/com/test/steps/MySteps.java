@@ -253,18 +253,40 @@ public void close(int seconds) throws  InterruptedException{
     Thread.sleep(seconds);
     driver.quit();
 }
-@When("I change number of users to  $number")
-public void changeNumberOfUser(String number)  {
+@When("I change number of elements to  $number in the $upperOrLower switcher")
+public void changeNumberOfUser(String number, String switcher)  throws InterruptedException{
     if(number.equals("10"))
-        number="";
+        number="1";
     if(number.equals("20"))
-        number="";
+        number="2";
     if(number.equals("100"))
-        number="";
+        number="3";
     if(number.equals("All Items"))
-        number="";
-    driver.findElement(By.id("")).click();
-   }
+        number="4";
+    if (switcher.equals("upper"))   {
+        driver.findElement(By.className("margin-short")).findElement(By.className("dropdown-toggle")).click();
+        driver.findElement(By.className("margin-short")).findElement(By.className("dropdown-menu")).findElement(By.xpath("li["+number+"]/a")).click(); }
+     else if (switcher.equals("lower"))    {
+       List <WebElement> elements= driver.findElements(By.className("dropdown-toggle"));
+        elements.get(2).click();
+        driver.findElement(By.className("open")).findElement(By.xpath("ul/li["+number+"]/a")).click(); }}
+@When("I switch to the $next page in the $switcher switcher")
+public void pageSwitcher(String page, String switcher) {
+    if (switcher.equals("upper")){
+      if(page.equals("next"))
+        page="11";
+      if(page.equals("prev"))
+            page="1";
+      driver.findElement(By.className("bg-white")).findElement(By.xpath("li["+page+"]/a")).click();
+    }
+}
+public void pageSwitcher(Integer page, String switcher) {
+        if (switcher.equals("upper")){
+         page+=1;
+            driver.findElement(By.className("bg-white")).findElement(By.xpath("li["+Integer.toString(page)+"]/a")).click();
+        }
+    }
+
 @When("I set search-query $query")
 public void search(String query){
     driver.findElement(By.className("search-query")).sendKeys(query);

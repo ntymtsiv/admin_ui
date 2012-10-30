@@ -5,10 +5,12 @@ When I set field Username: 'jsmith@clickatell.com'
 When I set field Password: '123123'
 When I press Sign In
 
-Scenario: I can find Groop by first part of name
+Scenario: Upper: I can switch to next page
 When I select tab Groop Settings
-When I set search-query 213
-When I press dropdown
-When I press Groops
-Then I found 21314
+When I switch to the 5 page in the upper switcher
+When I switch to the 1 page in the upper switcher
+When I switch to the 9 page in the upper switcher
+When I switch to the next page in the upper switcher
+When I switch to the prev page in the upper switcher
+
 
