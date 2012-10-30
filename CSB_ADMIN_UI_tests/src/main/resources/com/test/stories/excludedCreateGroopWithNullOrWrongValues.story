@@ -31,7 +31,7 @@ When I set field Groop Phone Number: '+33333333333'
 When I set field Groop Info: 'None Info ((('
 Then I check title
 
-Scenario: I can create groop with only Name
+Scenario: I can't create groop with only Name
 When I select tab Groop Settings
 When I press Add Groop
 When I set field Groop Name: 'BestGroop'
@@ -52,12 +52,55 @@ When I select tab Groop Settings
 When I press Add Groop
 When I set search-query BestGroop
 
-Scenario: I can't find Groop by name, when use find user
-Scenario: I can find Groop by name, when use find groop
-Scenario: I can't find userby name, when use find groop
-Scenario: I can find Groop by first part of name
+Scenario: I can't create groop with only Name
+When I select tab Groop Settings
+When I press Add Groop
+When I set field Groop Name: 'BestGroop'
+When I set field Groop Keyword: ''
+When I set field Chop Shop Store: ''
+When I set field Groop Web Site: ''
+When I set field Groop Tag Line: ''
+When I set field Groop Description: ''
+When I set field Groop Address: ''
+When I set field Groop City: ''
+When I set field Groop Postal Code: ''
+When I set field Groop Phone Number: ''
+When I set field Groop Info: ''
+When I press Save
+Then Groop has not been created
 
+Scenario: I can't create groop with empty values
+When I select tab Groop Settings
+When I press Add Groop
+When I set field Groop Name: ''
+When I set field Groop Keyword: ''
+When I set field Chop Shop Store: ''
+When I set field Groop Web Site: ''
+When I set field Groop Tag Line: ''
+When I set field Groop Description: ''
+When I set field Groop Address: ''
+When I set field Groop City: ''
+When I set field Groop Postal Code: ''
+When I set field Groop Phone Number: ''
+When I set field Groop Info: ''
+Then Groop has not been created
 
+Scenario: I can't create groop with only keyword
+When I select tab Groop Settings
+When I press Add Groop
+When I set field Groop Name: ''
+When I set field Groop Keyword: 'BestG'
+When I set field Chop Shop Store: ''
+When I set field Groop Web Site: ''
+When I set field Groop Tag Line: ''
+When I set field Groop Description: ''
+When I set field Groop Address: ''
+When I set field Groop City: ''
+When I set field Groop Postal Code: ''
+When I set field Groop Phone Number: ''
+When I set field Groop Info: ''
+When I press Save
+Then Groop has not been created
 
 Scenario: I can change number of users
 When I select tab Members Settings

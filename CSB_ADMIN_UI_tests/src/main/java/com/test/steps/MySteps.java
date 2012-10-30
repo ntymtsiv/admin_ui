@@ -79,8 +79,10 @@ public void pressButton(final String button) throws  InterruptedException {
       driver.findElement(By.className(Button_class)).findElement(By.className(button_id)).click();}
     else if (button.equals("Edit"))
         driver.findElement(By.partialLinkText(button)).click();
-    else if (button.equals("Add"))
+    else if (button.equals("Add"))        {
+        driver.findElement(By.id("ui-id-2")).click();
         driver.findElement(By.xpath("//button[text()='Add']")).click();
+          }
     else if (button.equals("Save"))
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
     else if (button.equals("Save (send message)"))
@@ -109,8 +111,6 @@ public void pressButton(final String button) throws  InterruptedException {
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
     else if (button.equals("Add Groop"))                  {
         try{
-          String title;
-           title=driver.getTitle();
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();}
         catch(Exception e){driver.findElement(By.partialLinkText(button)).click();}}
     else if (button.equals("Save & Publish"))  {
@@ -121,6 +121,8 @@ public void pressButton(final String button) throws  InterruptedException {
         button_id="btn-danger"; }
     else if (button.equals("Sign In"))
         driver.findElement(By.className("btn-large")).click();
+    else if(button.equals("Search All"))
+        driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
     else
         throw new RuntimeException();
     Thread.sleep(1000L);
@@ -215,6 +217,7 @@ public void set_fields(String field, String value) throws  InterruptedException 
     WebElement element =driver.findElement(By.id(field_id));
     element.clear();
     element.sendKeys(value);
+    Thread.sleep(500L);
  }
 
 @When("I set gender '$value'")
@@ -232,7 +235,7 @@ public void set_checkbox(String value) throws  InterruptedException {
 @Then("Groop $status")
     public void status(String status)   {
     if(status.equals("has not been created"))
-     if(!driver.getTitle().equals("FFF"))
+     if(!driver.getTitle().equals("Groop | Creating Groop | HeyZooka Admin"))
         throw new RuntimeException();
     if (status.equals("was created"))
         if(!driver.getTitle().equals("FFF"))
@@ -258,6 +261,13 @@ public void changeNumberOfUser(String number)  {
    }
 @When("I set search-query $query")
 public void search(String query){
-    driver.findElement(By.id("")).sendKeys(query);
+    driver.findElement(By.className("search-query")).sendKeys(query);
 }
+@Then("I found $user")
+public void resultsOfSearch(String user){
+    driver.findElement(By.className("table-bordered")).findElement(By.xpath("//*[text()='"+user+"']"));
+}
+@When("status")
+    public void stat() {
+    System.out.println(driver.getTitle());}
 }
