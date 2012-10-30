@@ -81,8 +81,7 @@ public void pressButton(final String button) throws  InterruptedException {
         driver.findElement(By.partialLinkText(button)).click();
     else if (button.equals("Add"))        {
         driver.findElement(By.id("ui-id-2")).click();
-        driver.findElement(By.xpath("//button[text()='Add']")).click();
-          }
+        driver.findElement(By.xpath("//button[text()='Add']")).click(); }
     else if (button.equals("Save"))
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
     else if (button.equals("Save (send message)"))
@@ -96,7 +95,7 @@ public void pressButton(final String button) throws  InterruptedException {
     else if (button.equals("Delete Message"))
         driver.findElement(By.xpath("//td[text()='2']/../td[5]/a[2]")).click();
     else if (button.equals("Remove"))
-        driver.findElement(By.xpath("//td[text()='Adele_Schohan']/../td[6]/a[2]")).click();
+        driver.findElement(By.className("action-td")).findElement(By.xpath("a[2]")).click();
     else if (button.equals("Block Member")||button.equals("Unblock Member"))
         driver.findElement(By.xpath("//td[text()='Adele_Schohan']/../td[6]/a")).click();
     else if (button.equals("Block"))
@@ -110,6 +109,7 @@ public void pressButton(final String button) throws  InterruptedException {
     else if (button.equals("Reset Form"))
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
     else if (button.equals("Add Groop"))                  {
+        driver.findElement(By.id("ui-id-2")).click();
         try{
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();}
         catch(Exception e){driver.findElement(By.partialLinkText(button)).click();}}

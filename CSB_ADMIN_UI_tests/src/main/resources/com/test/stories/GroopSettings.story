@@ -105,15 +105,11 @@ When I set field Groop Phone Number: '+33333333333'
 When I set field Groop Info: 'None Info ((('
 When I press Save
 
-Scenario: I can delete groop
-When I select tab Groop Settings
-When I press Delete
-
 Scenario: I can add member to groop
 When I select tab Groop Settings
 When I press Edit
 When I switch to tab Members
-When I set field Input Member Name: 'egngds'
+When I set field Input Member Name: 'abqvky'
 When I press Add
 
 Scenario: I can remove member from groop
@@ -121,6 +117,10 @@ When I select tab Groop Settings
 When I press Edit
 When I switch to tab Members
 When I press Remove
+
+Scenario: I can delete groop
+When I select tab Groop Settings
+When I press Delete
 
 
 
