@@ -8,10 +8,10 @@ Then I found None elements
 
 Scenario: I can find Groop by name, when use find groop
 When I select tab Groop Settings
-When I set search-query 21314
+When I set search-query aejupc
 When I press dropdown
 When I press Groops
-Then I found 21314
+Then I found aejupc
 
 Scenario: I can't find member by name, when use find groop
 When I select tab Groop Settings

@@ -109,7 +109,7 @@ Scenario: I can add member to groop
 When I select tab Groop Settings
 When I press Edit
 When I switch to tab Members
-When I set field Input Member Name: 'abqvky'
+When I set field Input Member Name: 'aeopem'
 When I press Add
 
 Scenario: I can remove member from groop

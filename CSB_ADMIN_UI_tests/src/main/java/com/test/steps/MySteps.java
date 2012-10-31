@@ -38,7 +38,7 @@ public void goToGoogle(String site) {
     driver.get(site);
 }
 @When("I select tab $tab")
-public void select_tab(String tab){
+public void selectTab(String tab){
     String tab_nav="";
     if (tab.equals("Dashboard"))
         tab_nav="1";
@@ -52,13 +52,13 @@ public void select_tab(String tab){
 }
 @When("I switch to tab $tab")
 public void switchToTab(String tab){
-    String tab_nav="";
+    String tabNav="";
     if (tab.equals("Messages"))
-        tab_nav="3";
+        tabNav="3";
     if (tab.equals("Groops")||tab.equals("Members"))
-        tab_nav="2";
+        tabNav="2";
 
-    driver.findElement(By.className("tabbable")).findElement(By.xpath("ul/li["+tab_nav+"]/a")).click();
+    driver.findElement(By.className("tabbable")).findElement(By.xpath("ul/li["+tabNav+"]/a")).click();
 }
 
 @When("I select type of message $type")
@@ -67,16 +67,15 @@ public void messageType(String type){
 
 @When("I press $button")
 public void pressButton(final String button) throws  InterruptedException {
-    String button_id="",Button_class="";
+    String buttonId="",Button_class="";
     if (button.equals("Add Member")){
         Button_class="span9";
-        button_id="btn-primary";
-        driver.findElement(By.className(Button_class)).findElement(By.className(button_id)).click();}
+        buttonId="btn-primary";
+        driver.findElement(By.className(Button_class)).findElement(By.className(buttonId)).click();}
     else if (button.equals("Create Member")) {
         Button_class="form-actions";
-       button_id="btn-primary";
-
-      driver.findElement(By.className(Button_class)).findElement(By.className(button_id)).click();}
+        buttonId="btn-primary";
+      driver.findElement(By.className(Button_class)).findElement(By.className(buttonId)).click();}
     else if (button.equals("Edit"))
         driver.findElement(By.partialLinkText(button)).click();
     else if (button.equals("Add"))        {
@@ -109,16 +108,13 @@ public void pressButton(final String button) throws  InterruptedException {
     else if (button.equals("Reset Form"))
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
     else if (button.equals("Add Groop"))                  {
-        driver.findElement(By.id("ui-id-2")).click();
         try{
-        driver.findElement(By.xpath("//*[text()='"+button+"']")).click();}
+            driver.findElement(By.id("ui-id-2")).click();
+            driver.findElement(By.xpath("//*[text()='"+button+"']")).click();}
         catch(Exception e){driver.findElement(By.partialLinkText(button)).click();}}
     else if (button.equals("Save & Publish"))  {
         Button_class="form-actions";
-        button_id="pull-right"; }
-    else if (button.equals("Delete"))  {
-        Button_class="pull-right";
-        button_id="btn-danger"; }
+        buttonId="pull-right"; }
     else if (button.equals("Sign In"))
         driver.findElement(By.className("btn-large")).click();
     else if(button.equals("Search All"))
@@ -223,7 +219,7 @@ public void set_fields(String field, String value) throws  InterruptedException 
     WebElement element =driver.findElement(By.id(field_id));
     element.clear();
     element.sendKeys(value);
-
+    Thread.sleep(500L);
  }
 
 @When("I set gender '$value'")
