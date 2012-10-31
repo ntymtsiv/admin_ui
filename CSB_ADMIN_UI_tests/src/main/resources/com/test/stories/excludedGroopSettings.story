@@ -118,6 +118,87 @@ When I press Edit
 When I switch to tab Members
 When I press Remove
 
+Scenario: I can add member to groop
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Messages
+When I select type of message HEY
+When I set field Recipient: 'Own Id'
+When I set field Message Body: 'HELP!!!!!!'
+When I press Save
+
+Scenario: I can add member to groop
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Messages
+When I select type of message HEYZOOKA_HEY
+When I set field Recipient: 'Own Id'
+When I set field Message Body: 'HELP!!!!!!'
+When I press Save
+
+Scenario: I can add member to groop
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Messages
+When I select type of message ADMINAZOOKA
+When I set field Recipient: 'Own Id'
+When I set field Message Body: 'HELP!!!!!!'
+When I press Save
+
+Scenario: I can add member to groop
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Messages
+When I select type of message HEY_WITH_PERKS
+When I set field Recipient: 'Own Id'
+When I set field Message Body: 'HELP!!!!!!'
+When I press Save
+
+Scenario: I can add member to groop
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Messages
+When I select type of message HELP_REQUEST
+When I set field Recipient: 'Own Id'
+When I set field Message Body: 'HELP!!!!!!'
+When I press Save
+
+Scenario: I can add member to groop
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Messages
+When I select type of message PROBLEM_REPORT
+When I set field Recipient: 'Own Id'
+When I set field Message Body: 'HELP!!!!!!'
+When I press Save
+
+Scenario: I can add member to groop
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Messages
+When I select type of message GROOP_MESSAGE
+When I set field Recipient: 'Own Id'
+When I set field Message Body: 'HELP!!!!!!'
+When I press Save
+
+Scenario: I can add member to groop
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Messages
+When I select type of message MESSAGE
+When I set field Recipient: 'Own Id'
+When I set field Message Body: 'HELP!!!!!!'
+When I press Save
+
+Scenario: I can add member to groop
+When I select tab Groop Settings
+When I press Edit
+When I switch to tab Messages
+When I select type of message DIRECT_MESSAGE
+When I set field Recipient: 'Own Id'
+When I set field Message Body: 'HELP!!!!!!'
+When I press Save
+
 Scenario: I can delete groop
 When I select tab Groop Settings
 When I press Delete

@@ -6,15 +6,9 @@ When I set field Username: 'jsmith@clickatell.com'
 When I set field Password: '123123'
 When I press Sign In
 
-Scenario: I can add member to groop
-When I select tab Groop Settings
-When I press Edit
-When I switch to tab Members
-When I set field Input Member Name: 'afvvkq'
-When I press Add
-
-Scenario: I can remove member from groop
-When I select tab Groop Settings
-When I press Edit
-When I switch to tab Members
-When I press Remove
+Scenario: I can send direct message by member
+When I select tab Content Management
+When I set field Headline: 'Nevermore'
+When I set field Member_Name: 'Nevermore'
+When I set field Article: 'Nevermore'
+When I press Save & Publish

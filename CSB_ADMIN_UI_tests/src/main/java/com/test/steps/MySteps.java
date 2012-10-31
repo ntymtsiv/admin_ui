@@ -48,6 +48,7 @@ public void selectTab(String tab){
         tab_nav="3";
     else if (tab.equals("Content Management"))
         tab_nav="4";
+
     driver.findElement(By.id("main-nav")).findElement(By.xpath("li["+tab_nav+"]/a")).click();
 }
 @When("I switch to tab $tab")
@@ -104,6 +105,7 @@ public void pressButton(final String button) throws  InterruptedException {
     else if (button.equals("Leave"))
         driver.findElement(By.partialLinkText(button)).click();
     else if (button.equals("Upload"))
+
         driver.findElement(By.id("news_images")).findElement(By.className("btn")).click();
     else if (button.equals("Reset Form"))
         driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
@@ -112,9 +114,8 @@ public void pressButton(final String button) throws  InterruptedException {
             driver.findElement(By.id("ui-id-2")).click();
             driver.findElement(By.xpath("//*[text()='"+button+"']")).click();}
         catch(Exception e){driver.findElement(By.partialLinkText(button)).click();}}
-    else if (button.equals("Save & Publish"))  {
-        Button_class="form-actions";
-        buttonId="pull-right"; }
+    else if (button.equals("Save & Publish"))
+        driver.findElement(By.xpath("//*[text()='"+button+"']")).click();
     else if (button.equals("Sign In"))
         driver.findElement(By.className("btn-large")).click();
     else if(button.equals("Search All"))
@@ -156,6 +157,7 @@ public void birthday(String year){
 @When("I set field $field: '$value'")
 public void set_fields(String field, String value) throws  InterruptedException {
   String field_id="";
+    WebElement communityId;
     if (field.equals("Mobile Number"))
         field_id="mobile_number";
     else if (field.equals("First Name"))
@@ -212,12 +214,21 @@ public void set_fields(String field, String value) throws  InterruptedException 
         field_id="groop_description";
     else if (field.equals("Input Member Name"))
         field_id="groopmember";
-    else if (field.equals("Recipient"))
+    else if (field.equals("Recipient"))    {
         field_id="recipient";
+            if(value.equals("Own Id"))     {
+                communityId =  driver.findElement(By.className("pull-right"));
+                String communityId2=communityId.getText();
+                String [] communityId3 = communityId2.split(" ");
+                value=communityId3[1];
+                 }
+           }
+
     else
          System.out.println("Error value");
+
     WebElement element =driver.findElement(By.id(field_id));
-    element.clear();
+   element.clear();
     element.sendKeys(value);
     Thread.sleep(500L);
  }
