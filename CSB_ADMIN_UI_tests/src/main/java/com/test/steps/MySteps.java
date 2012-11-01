@@ -39,26 +39,28 @@ public void goToGoogle(String site) {
 }
 @When("I select tab $tab")
 public void selectTab(String tab){
-    String tab_nav="";
+    String tabNav="";
     if (tab.equals("Dashboard"))
-        tab_nav="1";
+        tabNav="1";
     else if (tab.equals("Groop Settings"))
-        tab_nav="2";
+        tabNav="2";
     else if (tab.equals("Members Settings"))
-        tab_nav="3";
+        tabNav="3";
+    else if (tab.equals("HeyZooka Groop"))
+        tabNav="4";
     else if (tab.equals("Content Management"))
-        tab_nav="4";
-
-    driver.findElement(By.id("main-nav")).findElement(By.xpath("li["+tab_nav+"]/a")).click();
+        tabNav="5";
+    driver.findElement(By.id("main-nav")).findElement(By.xpath("li["+tabNav+"]/a")).click();
 }
 @When("I switch to tab $tab")
 public void switchToTab(String tab){
     String tabNav="";
     if (tab.equals("Messages"))
         tabNav="3";
-    if (tab.equals("Groops")||tab.equals("Members"))
+    else if (tab.equals("Groops")||tab.equals("Members"))
         tabNav="2";
-
+    else if (tab.equals("Settings"))
+        tabNav="1";
     driver.findElement(By.className("tabbable")).findElement(By.xpath("ul/li["+tabNav+"]/a")).click();
 }
 
@@ -68,15 +70,15 @@ public void messageType(String type){
 
 @When("I press $button")
 public void pressButton(final String button) throws  InterruptedException {
-    String buttonId="",Button_class="";
+    String buttonId="",ButtonClass="";
     if (button.equals("Add Member")){
-        Button_class="span9";
+        ButtonClass="span9";
         buttonId="btn-primary";
-        driver.findElement(By.className(Button_class)).findElement(By.className(buttonId)).click();}
+        driver.findElement(By.className(ButtonClass)).findElement(By.className(buttonId)).click();}
     else if (button.equals("Create Member")) {
-        Button_class="form-actions";
+        ButtonClass="form-actions";
         buttonId="btn-primary";
-      driver.findElement(By.className(Button_class)).findElement(By.className(buttonId)).click();}
+      driver.findElement(By.className(ButtonClass)).findElement(By.className(buttonId)).click();}
     else if (button.equals("Edit"))
         driver.findElement(By.partialLinkText(button)).click();
     else if (button.equals("Add"))        {
@@ -155,86 +157,81 @@ public void birthday(String year){
 }
 
 @When("I set field $field: '$value'")
-public void set_fields(String field, String value) throws  InterruptedException {
-  String field_id="";
+public void setFields(String field, String value) throws  InterruptedException {
+  String fieldId="";
     WebElement communityId;
     if (field.equals("Mobile Number"))
-        field_id="mobile_number";
+        fieldId="mobile_number";
     else if (field.equals("First Name"))
-        field_id="first_name";
+        fieldId="first_name";
     else if (field.equals("Last Name"))
-        field_id="last_name";
+        fieldId="last_name";
     else if (field.equals("Member Name"))
-        field_id="member_name";
+        fieldId="member_name";
     else if (field.equals("Member Email"))
-        field_id="member_email";
+        fieldId="member_email";
     else if (field.equals("Postal Code"))
-        field_id="postal_code";
+        fieldId="postal_code";
     else if (field.equals("Bio"))
-        field_id="bio";
+        fieldId="bio";
     else if (field.equals("Headline"))
-        field_id="headline";
+        fieldId="headline";
     else if (field.equals("Message Body"))
-        field_id="message_body";
+        fieldId="message_body";
     else if (field.equals("Add Groop"))
-        field_id="add_groop";
+        fieldId="add_groop";
     else if (field.equals("Sub-Headline"))
-        field_id="subheadline";
+        fieldId="subheadline";
     else if (field.equals("Member_Name"))
-        field_id="byline";
+        fieldId="byline";
     else if (field.equals("Article"))
-        field_id="article";
+        fieldId="article";
     else if (field.equals("Username"))
-        field_id="username";
+        fieldId="username";
     else if (field.equals("Password"))
-        field_id="password";
+        fieldId="password";
     else if (field.equals("Groop Name"))
-        field_id="name";
+        fieldId="name";
     else if (field.equals("Groop Owner"))
-        field_id="groopowner";
+        fieldId="groopowner";
     else if (field.equals("Groop Keyword"))
-        field_id="details.keyword";
+        fieldId="details.keyword";
     else if (field.equals("Chop Shop Store"))
-        field_id="information.fullName";
+        fieldId="information.fullName";
     else if (field.equals("Groop Web Site"))
-        field_id="web";
+        fieldId="web";
     else if (field.equals("Groop Tag Line"))
-        field_id="tagline";
+        fieldId="tagline";
     else if (field.equals("Groop Description"))
-        field_id="description";
+        fieldId="description";
     else if (field.equals("Groop Address"))
-        field_id="groop_address_1";
+        fieldId="groop_address_1";
     else if (field.equals("Groop City"))
-        field_id="groop_city";
+        fieldId="groop_city";
     else if (field.equals("Groop Postal Code"))
-        field_id="groop_postal_code";
+        fieldId="groop_postal_code";
     else if (field.equals("Groop Phone Number"))
-        field_id="groop_phone_number";
+        fieldId="groop_phone_number";
     else if (field.equals("Groop Info"))
-        field_id="groop_description";
+        fieldId="groop_description";
     else if (field.equals("Input Member Name"))
-        field_id="groopmember";
+        fieldId="groopmember";
     else if (field.equals("Recipient"))    {
-        field_id="recipient";
+        fieldId="recipient";
             if(value.equals("Own Id"))     {
                 communityId =  driver.findElement(By.className("pull-right"));
                 String communityId2=communityId.getText();
                 String [] communityId3 = communityId2.split(" ");
-                value=communityId3[1];
-                 }
-           }
-
+                value=communityId3[1];  }  }
     else
-         System.out.println("Error value");
-
-    WebElement element =driver.findElement(By.id(field_id));
-   element.clear();
+         throw new RuntimeException("Error field");
+    WebElement element =driver.findElement(By.id(fieldId));
+    element.clear();
     element.sendKeys(value);
-    Thread.sleep(500L);
- }
+    Thread.sleep(500L); }
 
 @When("I set gender '$value'")
-public void set_checkbox(String value) throws  InterruptedException {
+public void setCheckbox(String value) throws  InterruptedException {
    String gander="";
    if (value.equals("Male"))
        gander="1";
@@ -284,20 +281,16 @@ public void pageSwitcher(String page, String switcher) {
         page="11";
       if(page.equals("prev"))
             page="1";
-      driver.findElement(By.className("bg-white")).findElement(By.xpath("li["+page+"]/a")).click();
-    }
-}
+      driver.findElement(By.className("bg-white")).findElement(By.xpath("li["+page+"]/a")).click();  }}
 public void pageSwitcher(Integer page, String switcher) {
         if (switcher.equals("upper")){
-         page+=1;
-            driver.findElement(By.className("bg-white")).findElement(By.xpath("li["+Integer.toString(page)+"]/a")).click();
-        }
-    }
+            page+=1;
+            driver.findElement(By.className("bg-white")).findElement(By.xpath("li["+Integer.toString(page)+"]/a")).click(); } }
 
 @When("I set search-query $query")
 public void search(String query){
-    driver.findElement(By.className("search-query")).sendKeys(query);
-}
+    driver.findElement(By.className("search-query")).sendKeys(query);}
+
 @Then("I found $user")
 public void resultsOfSearch(String user){
     if(user.equals("None elements"))
