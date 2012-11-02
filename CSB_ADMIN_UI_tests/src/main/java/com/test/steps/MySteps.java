@@ -270,16 +270,16 @@ public void changeNumberOfUser(String number, String switcher)  throws Interrupt
     if (switcher.equals("upper"))   {
         driver.findElement(By.className("margin-short")).findElement(By.className("dropdown-toggle")).click();
         driver.findElement(By.className("margin-short")).findElement(By.className("dropdown-menu")).findElement(By.xpath("li["+number+"]/a")).click(); }
-     else if (switcher.equals("lower"))    {
-       List <WebElement> elements= driver.findElements(By.className("dropdown-toggle"));
+    else if (switcher.equals("lower"))    {
+        List <WebElement> elements= driver.findElements(By.className("dropdown-toggle"));
         elements.get(2).click();
         driver.findElement(By.className("open")).findElement(By.xpath("ul/li["+number+"]/a")).click(); }}
 @When("I switch to the $next page in the $switcher switcher")
 public void pageSwitcher(String page, String switcher) {
     if (switcher.equals("upper")){
       if(page.equals("next"))
-        page="11";
-      if(page.equals("prev"))
+            page="11";
+      else if(page.equals("prev"))
             page="1";
       driver.findElement(By.className("bg-white")).findElement(By.xpath("li["+page+"]/a")).click();  }}
 public void pageSwitcher(Integer page, String switcher) {
@@ -299,6 +299,6 @@ public void resultsOfSearch(String user){
             throw new RuntimeException();  }
         catch (NoSuchElementException e){}
     else
-    driver.findElement(By.className("table-bordered")).findElement(By.xpath("//*[text()='"+user+"']"));
+        driver.findElement(By.className("table-bordered")).findElement(By.xpath("//*[text()='"+user+"']"));
 }
 }
