@@ -303,11 +303,9 @@ public void resultsOfSearch(String user){
     else
         driver.findElement(By.className("table-bordered")).findElement(By.xpath("//*[text()='"+user+"']"));
 }
-    @When("I sea asdasdasdas")
-    public void asdasda(){
-    @When("I set search-query $query")
-     @Then("I found user")
-     System.out.println();
 
-    }
+
+
+
+
 }
