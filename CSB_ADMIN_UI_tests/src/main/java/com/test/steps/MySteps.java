@@ -8,6 +8,7 @@ import org.jbehave.core.annotations.*;
 import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.internal.selenesedriver.QuitSelenium;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.test.help.tools.*;
@@ -304,8 +305,13 @@ public void resultsOfSearch(String user){
         driver.findElement(By.className("table-bordered")).findElement(By.xpath("//*[text()='"+user+"']"));
 }
 
-
-
-
-
+@When("I login in with default credentials")
+@Composite (steps = {
+    "Given http://clickatell-dev-1835033989.us-east-1.elb.amazonaws.com/admin/auth/login",
+    "When I set field Username: 'jsmith@clickatell.com'",
+    "When I set field Password: '123123'",
+    "When I press Sign In"
+    })
+public void aCompositeStep(String site, String product) { // composed steps use these named parameters
+}
 }
