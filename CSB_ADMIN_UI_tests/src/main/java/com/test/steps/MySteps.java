@@ -31,12 +31,14 @@ public class MySteps {
 //
 //    return client;}};
 
+
 @Given("$site")
 public void goToGoogle(String site) {
   //  driver.manage().window().maximize();
     driver.manage().window().setPosition(new Point(1000,500));
     driver.get(site);
 }
+
 @When("I select tab $tab")
 public void selectTab(String tab){
     String tabNav="";
@@ -301,4 +303,11 @@ public void resultsOfSearch(String user){
     else
         driver.findElement(By.className("table-bordered")).findElement(By.xpath("//*[text()='"+user+"']"));
 }
+    @When("I sea asdasdasdas")
+    public void asdasda(){
+    @When("I set search-query $query")
+     @Then("I found user")
+     System.out.println();
+
+    }
 }
