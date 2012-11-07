@@ -13,15 +13,9 @@
 <h2>Scenario: Sign In</h2>
 <div class="step successful">Given I login in with default credentials</div>
 <div class="step successful">Given I open site</div>
-<div class="step failed">When I set field Username: 'adminLogin' <span class="keyword failed">(FAILED)</span><br/><span class="message failed">org.openqa.selenium.NoSuchElementException: Unable to locate element: {&quot;method&quot;:&quot;id&quot;,&quot;selector&quot;:&quot;username&quot;}
-Command duration or timeout: 27 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 22:18:01'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_05'
-Driver info: driver.version: RemoteWebDriver
-Session ID: 7b4af749-d3bb-465e-ae1c-7aeb949f9856</span></div>
-<div class="step notPerformed">When I set field Password: 'adminPassword' <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
-<div class="step notPerformed">When I press <span class="step parameter">Sign In</span> <span class="keyword notPerformed">(NOT PERFORMED)</span></div>
+<div class="step successful">Then I set field Login</div>
+<div class="step successful">Then I set field Password</div>
+<div class="step successful">When I press <span class="step parameter">Sign In</span></div>
 </div>
 </div>
 

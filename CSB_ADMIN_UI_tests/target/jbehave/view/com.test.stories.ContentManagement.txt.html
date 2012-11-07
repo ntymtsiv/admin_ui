@@ -13,16 +13,9 @@
 Scenario: Sign In
 Given I login in with default credentials
 Given I open site
-When I set field Username: 'adminLogin' (FAILED)
-(org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"id","selector":"username"}
-Command duration or timeout: 27 milliseconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '2.25.0', revision: '17482', time: '2012-07-18 22:18:01'
-System info: os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.7.0_05'
-Driver info: driver.version: RemoteWebDriver
-Session ID: 7b4af749-d3bb-465e-ae1c-7aeb949f9856)
-When I set field Password: 'adminPassword' (NOT PERFORMED)
-When I press Sign In (NOT PERFORMED)
+Then I set field Login
+Then I set field Password
+When I press Sign In
 
 
 

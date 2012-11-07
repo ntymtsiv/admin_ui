@@ -42,6 +42,21 @@ public class MySteps {
         driver.get(site);
     }
 
+@Then("I set field Login")
+    public void loginIn() throws  InterruptedException{
+    WebElement element =driver.findElement(By.id("username"));
+    element.clear();
+    element.sendKeys(adminLogin);
+    Thread.sleep(500L);
+    }
+@Then("I set field Password")
+    public void Passwordfield() throws  InterruptedException{
+        WebElement element =driver.findElement(By.id("password"));
+        element.clear();
+        element.sendKeys(adminPassword);
+        Thread.sleep(500L);
+    }
+
 @When("I select tab $tab")
 public void selectTab(String tab){
     String tabNav="";
@@ -310,11 +325,11 @@ public void resultsOfSearch(String user){
 @Given("I login in with default credentials")
 @Composite (steps = {
         "Given I open site",
-        "When I set field Username: 'adminLogin'",
-        "When I set field Password: 'adminPassword'",
+        "Then I set field Login",
+        "Then I set field Password",
         "When I press Sign In"
     })
-public void aCompositeStep() {
+public void aCompositeStep() { // composed steps use these named parameters
 }
 
 
