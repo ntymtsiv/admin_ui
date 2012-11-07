@@ -75,12 +75,14 @@ public void selectTab(String tab){
 @When("I switch to tab $tab")
 public void switchToTab(String tab){
     String tabNav="";
-    if (tab.equals("Messages"))
+    if (tab.equals("Messages")||tab.equals("Product Page"))
         tabNav="3";
-    else if (tab.equals("Groops")||tab.equals("Members"))
+    else if (tab.equals("Groops")||tab.equals("Members")||tab.equals("Landing Page"))
         tabNav="2";
     else if (tab.equals("Settings"))
         tabNav="1";
+    else if (tab.equals("Learn More"))
+        tabNav="4";
     driver.findElement(By.className("tabbable")).findElement(By.xpath("ul/li["+tabNav+"]/a")).click();
 }
 
