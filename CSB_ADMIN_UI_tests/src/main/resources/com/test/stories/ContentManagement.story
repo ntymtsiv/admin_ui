@@ -1,3 +1,4 @@
 
 Scenario: Sign In
-When I login in with default credantials
+
+Given I login in with default credentials

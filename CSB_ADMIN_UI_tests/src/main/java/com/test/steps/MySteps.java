@@ -14,14 +14,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import com.test.help.tools.*;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import sun.awt.windows.ThemeReader;
-
+import com.test.Config;
 
 import java.util.List;
 
 
 public class MySteps {
-
+      Config configure = new Config();
       WebDriver driver = new FirefoxDriver();
+      String site = configure.configurationFile();
+      String adminLogin = configure.login();
+      String adminPassword = configure.adminPassword();
 
 //        WebDriver driver = new HtmlUnitDriver(true) {
 //  public WebClient modifyWebClient(WebClient client) {
@@ -32,13 +35,12 @@ public class MySteps {
 //
 //    return client;}};
 
-
-@Given("$site")
-public void goToGoogle(String site) {
-  //  driver.manage().window().maximize();
-    driver.manage().window().setPosition(new Point(1000,500));
-    driver.get(site);
-}
+@Given("I open site")
+    public void goToGoogle() {
+        //  driver.manage().window().maximize();
+        driver.manage().window().setPosition(new Point(1000,500));
+        driver.get(site);
+    }
 
 @When("I select tab $tab")
 public void selectTab(String tab){
@@ -305,13 +307,15 @@ public void resultsOfSearch(String user){
         driver.findElement(By.className("table-bordered")).findElement(By.xpath("//*[text()='"+user+"']"));
 }
 
-@When("I login in with default credentials")
+@Given("I login in with default credentials")
 @Composite (steps = {
-    "Given http://clickatell-dev-1835033989.us-east-1.elb.amazonaws.com/admin/auth/login",
-    "When I set field Username: 'jsmith@clickatell.com'",
-    "When I set field Password: '123123'",
-    "When I press Sign In"
+        "Given I open site",
+        "When I set field Username: 'adminLogin'",
+        "When I set field Password: 'adminPassword'",
+        "When I press Sign In"
     })
-public void aCompositeStep(String site, String product) { // composed steps use these named parameters
+public void aCompositeStep() {
 }
+
+
 }
